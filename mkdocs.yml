@@ -1,0 +1,57 @@
+site_name: ICS4U Course
+site_description: Course notes and lessons for ICS4U
+site_author: Angelo
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+
+plugins:
+  - search
+  - glightbox
+
+nav:
+  - Home: index.md
+  - Unit 1 - Getting Started:
+      - 1. From ICS3U to ICS4U: unit1/1-intro.md
+      - 2. Setting Up Replit: unit1/2-setting-up-replit.md
+      - 3. Creating a TypeScript Project: unit1/3-organizing-projects.md
+      - 4. Assignment 1: unit1/4-assignment.md
+      - 5. Basic TypeScript Syntax: unit1/5-syntax-basics.md
+      - 6. Assignment 2: unit1/6-assignment-2.md

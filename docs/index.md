@@ -6,9 +6,7 @@ as your coding environment.
 
 ## What This Course Covers
 
-!!! danger "TODO: Angelo to update this section"
-    Replace this placeholder with a short overview of what the course
-    actually covers.
+This course extends the programming skills developed in ICS3U, using TypeScript as the language for building larger, more structured programs. (If your ICS3U course used a different language, that's no problem — the concepts carry over, and TypeScript syntax is introduced from the ground up in Unit 1.) Students design software using object-oriented principles, working in a browser-based development environment (Replit) alongside a custom in-browser TypeScript runner. Through a student-managed team project, students apply the full software development process — planning, building, testing, and reviewing — using industry-standard project management practices. Students also analyze algorithms for effectiveness, and examine the ethical, environmental, and career dimensions of the computer science field.
 
 ## Jump to a Unit
 

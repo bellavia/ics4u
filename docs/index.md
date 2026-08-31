@@ -1,12 +1,26 @@
 # Welcome to ICS4U
 
-Welcome to **Introduction to Computer Science, Grade 12**! This course
-builds directly on ICS3U, continuing with **TypeScript** and **Replit**
-as your coding environment.
+Welcome to **Computer Science, Grade 12**! This course builds directly
+on ICS3U, continuing with **TypeScript** and **Replit** as your coding
+environment.
+
+**Prerequisite:** Introduction to Computer Science, Grade 11,
+University Preparation (ICS3U)
 
 ## What This Course Covers
 
-This course extends the programming skills developed in ICS3U, using TypeScript as the language for building larger, more structured programs. (If your ICS3U course used a different language, that's no problem — the concepts carry over, and TypeScript syntax is introduced from the ground up in Unit 1.) Students design software using object-oriented principles, working in a browser-based development environment (Replit) alongside a custom in-browser TypeScript runner. Through a student-managed team project, students apply the full software development process — planning, building, testing, and reviewing — using industry-standard project management practices. Students also analyze algorithms for effectiveness, and examine the ethical, environmental, and career dimensions of the computer science field.
+This course extends the programming skills developed in ICS3U, using
+TypeScript as the language for building larger, more structured
+programs. (If your ICS3U course used a different language, that's no
+problem — the concepts carry over, and TypeScript syntax is
+introduced from the ground up in Unit 1.) You'll design software using
+object-oriented principles, working in a browser-based development
+environment (Replit) alongside a custom in-browser TypeScript runner.
+Through a student-managed team project, you'll apply the full software
+development process — planning, building, testing, and reviewing —
+using industry-standard project management practices. You'll also
+analyze algorithms for effectiveness, and examine the ethical,
+environmental, and career dimensions of the computer science field.
 
 ## Jump to a Unit
 

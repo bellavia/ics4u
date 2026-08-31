@@ -1,0 +1,262 @@
+﻿//ICS4U Unit 1 Test - Import into D2L Question Library via Quiz > Add/Edit Questions > Import
+"//15 Multiple Choice, 5 True/False, 4 Written Response (K/U or Comm), 1 Written Response (Application/Thinking)"
+
+"//=== MULTIPLE CHOICE (1 mark each, 15 marks) ==="
+NewQuestion,MC
+ID,ICS4U-U1-MC1
+Title,Course language
+QuestionText,Which programming language is used throughout ICS4U?
+Points,1
+Difficulty,1
+Option,100,TypeScript,,Correct.
+Option,0,Python,,Python is not the language used in this course.
+Option,0,Java,,Java is not the language used in this course.
+Option,0,C++,,C++ is not the language used in this course.
+
+NewQuestion,MC
+ID,ICS4U-U1-MC2
+Title,Concepts carrying over from ICS3U
+QuestionText,"According to the intro lesson, if your ICS3U course used a different language than TypeScript, what stays the same coming into ICS4U?"
+Points,1
+Difficulty,1
+Option,100,"The underlying programming concepts (loops, conditionals, functions, etc.) - only the syntax changes",,Correct.
+Option,0,Nothing - you must relearn every concept from scratch,,The lesson states the underlying concepts carry over completely.
+Option,0,Only the way you set up Replit stays the same,,"It's the programming concepts themselves, not just the setup process, that carry over."
+Option,0,"Only variables carry over, but not loops or functions",,"All the fundamentals listed - variables, selection, loops, arrays, functions - carry over."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC3
+Title,let vs const
+QuestionText,What is the key difference between let and const in TypeScript?
+Points,1
+Difficulty,1
+Option,100,A let variable can be reassigned later; a const variable cannot be reassigned after it's set,,Correct.
+Option,0,A const variable can be reassigned; a let variable cannot,,This has let and const reversed.
+Option,0,let and const are just two different names for the same thing,,They behave differently - only let allows reassignment.
+Option,0,"const is used only for numbers, and let is used only for text",,"Both let and const can hold any type; the difference is about reassignment, not data type."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC4
+Title,Type annotation purpose
+QuestionText,What does a type annotation (like : number after a variable name) do?
+Points,1
+Difficulty,1
+Option,100,Tells the compiler what kind of value the variable is allowed to hold,,Correct.
+Option,0,Prints the variable's value to the Shell,,"That is the job of console.log, not a type annotation."
+Option,0,Deletes the variable once the program ends,,Type annotations don't control a variable's lifetime.
+Option,0,Converts the variable into an array automatically,,A type annotation specifies a type; it doesn't convert anything into an array.
+
+NewQuestion,MC
+ID,ICS4U-U1-MC5
+Title,Static typing
+QuestionText,"What does it mean that TypeScript is ""statically typed""?"
+Points,1
+Difficulty,2
+Option,100,Mismatched types are caught by the compiler (tsc) before the program ever runs,,Correct.
+Option,0,Variables can never change their value once created,,"That describes const, not static typing in general."
+Option,0,Type mismatches are only discovered while the program is running,,"That describes the opposite - dynamic typing, not TypeScript's static typing."
+Option,0,Every variable must be declared using const,,"Static typing is about catching type errors early, not about which keyword you use."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC6
+Title,console.log output
+QuestionText,"What does console.log(""Name:"", name, ""Age:"", age) do when called with multiple arguments?"
+Points,1
+Difficulty,1
+Option,100,"Prints all the arguments on the same line, separated by spaces",,Correct.
+Option,0,Only prints the first argument and ignores the rest,,console.log prints every argument passed to it.
+Option,0,"Causes a compile error, since console.log only accepts one argument",,console.log can accept multiple comma-separated arguments.
+Option,0,Prints each argument on its own separate line,,"Multiple arguments are printed on the same line, separated by spaces, not on separate lines."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC7
+Title,Template literals
+QuestionText,What is the purpose of a template literal like `Name: ${name}`?
+Points,1
+Difficulty,2
+Option,100,"It combines text and variables into a single string, using backticks and ${}",,Correct.
+Option,0,It creates a new array from a string,,Template literals build strings; they don't create arrays.
+Option,0,It compiles TypeScript into JavaScript,,"Template literals are a syntax feature for strings, not part of the compile process."
+Option,0,It declares a new function,,"Template literals are used for string interpolation, not function declarations."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC8
+Title,Equality operator
+QuestionText,Which operator should be used to compare two values for equality in an if statement?
+Points,1
+Difficulty,1
+Option,100,===,,Correct.
+Option,0,=,,"A single = is assignment, not comparison."
+Option,0,==>,,This is not a valid TypeScript comparison operator.
+Option,0,!==,,"!== checks for inequality (not equal), not equality."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC9
+Title,else if chaining
+QuestionText,"In a chain of if / else if / else statements, what happens once one condition evaluates to true?"
+Points,1
+Difficulty,2
+Option,100,"That block runs, and the remaining conditions in the chain are skipped",,Correct.
+Option,0,"Every block in the chain runs, regardless of which conditions are true",,Only the first matching block runs; the rest are skipped.
+Option,0,The program stops running entirely,,The program continues after the if/else chain; it doesn't stop.
+Option,0,TypeScript throws a compile error,,A valid if/else if/else chain does not cause a compile error.
+
+NewQuestion,MC
+ID,ICS4U-U1-MC10
+Title,&& and ||
+QuestionText,"In the condition (age >= 16 && hasPermission), what must be true for the overall condition to be true?"
+Points,1
+Difficulty,2
+Option,100,Both age >= 16 and hasPermission must be true,,Correct - && requires both sides to be true.
+Option,0,Only one of the two conditions needs to be true,,"That describes ||, not &&."
+Option,0,Neither condition needs to be true,,At least one side (with ||) or both sides (with &&) must be true - not neither.
+Option,0,Only hasPermission is checked; age is ignored,,"&& checks both sides of the expression, not just one."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC11
+Title,For loop parts
+QuestionText,"A for loop's parentheses contain three parts, in order. What are they?"
+Points,1
+Difficulty,2
+Option,100,"A starting value, a condition checked before each repetition, and an update that runs after each repetition",,Correct.
+Option,0,"A variable name, a data type, and a return value",,"Those are more like function or variable declaration parts, not a for loop's structure."
+Option,0,"An array, an index, and a value",,"Those describe accessing an array, not the structure of a for loop."
+Option,0,"A function name, its parameters, and its body",,"That describes a function declaration, not a for loop."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC12
+Title,When to use while
+QuestionText,"According to the lesson, when should you choose a while loop over a for loop?"
+Points,1
+Difficulty,2
+Option,100,"When you don't know in advance how many times you'll repeat, only the condition that should keep it going",,Correct.
+Option,0,When you know the exact number of repetitions before the loop starts,,"That situation favours a for loop, not a while loop."
+Option,0,Only when working with arrays,,While loops aren't limited to arrays; the choice depends on whether the repeat count is known in advance.
+Option,0,While loops are never used in TypeScript,,While loops are a valid and commonly used loop type in TypeScript.
+
+NewQuestion,MC
+ID,ICS4U-U1-MC13
+Title,Array declaration
+QuestionText,How would you declare an array meant to hold only numbers?
+Points,1
+Difficulty,1
+Option,100,"let scores: number[] = [85, 90, 78, 92];",,Correct.
+Option,0,"let scores: number = [85, 90, 78, 92];",,The type annotation number[] (not number) is needed to indicate an array of numbers.
+Option,0,"let scores: array = 85, 90, 78, 92;",,This is not valid TypeScript array syntax.
+Option,0,"const scores: string[] = [85, 90, 78, 92];",,string[] is the wrong type annotation for an array of numbers.
+
+NewQuestion,MC
+ID,ICS4U-U1-MC14
+Title,Array indexing
+QuestionText,"Given let scores: number[] = [85, 90, 78, 92];, what does scores[0] refer to?"
+Points,1
+Difficulty,1
+Option,100,"85 - the first element, since array indexes start at 0",,Correct.
+Option,0,90 - the second element,,"That would be scores[1], not scores[0]."
+Option,0,92 - the last element,,"That would be scores[3], not scores[0]."
+Option,0,Nothing - arrays don't have a 0 index,,"Array indexes start at 0 in TypeScript, so scores[0] is valid and refers to the first element."
+
+NewQuestion,MC
+ID,ICS4U-U1-MC15
+Title,Function return type
+QuestionText,"In function add(a: number, b: number): number { return a + b; }, what does the : number after the parentheses represent?"
+Points,1
+Difficulty,2
+Option,100,The function's return type - the type of value it sends back,,Correct.
+Option,0,The type of the function's name,,Function names aren't typed this way; this annotation describes the return value.
+Option,0,The number of parameters the function accepts,,"The function has two parameters (a and b); the : number describes the return type, not the parameter count."
+Option,0,The type of the first parameter only,,"The first parameter's type is declared separately, inside the parentheses (a: number)."
+
+"//=== TRUE / FALSE (1 mark each, 5 marks) ==="
+NewQuestion,TF
+ID,ICS4U-U1-TF1
+Title,Static typing timing
+QuestionText,"True or False: In TypeScript, a type mismatch (like assigning a string to a number variable) is caught by the compiler before the program runs, not discovered later while it's running."
+Points,1
+Difficulty,1
+TRUE,100,Correct - this is what it means for TypeScript to be statically typed.
+FALSE,0,"Incorrect - TypeScript's static typing catches these mismatches at compile time, before the program runs."
+
+NewQuestion,TF
+ID,ICS4U-U1-TF2
+Title,Reassigning const
+QuestionText,"True or False: A const variable can be reassigned to a new value, as long as the new value is the same type."
+Points,1
+Difficulty,1
+TRUE,0,"Incorrect - a const variable cannot be reassigned at all, even to another value of the same type."
+FALSE,100,"Correct - const variables cannot be reassigned after they are set, regardless of type."
+
+NewQuestion,TF
+ID,ICS4U-U1-TF3
+Title,Array index start
+QuestionText,"True or False: Array indexes in TypeScript start at 1, so the first element is at index 1."
+Points,1
+Difficulty,1
+TRUE,0,"Incorrect - array indexes start at 0, so the first element is at index 0."
+FALSE,100,"Correct - array indexes start at 0, not 1."
+
+NewQuestion,TF
+ID,ICS4U-U1-TF4
+Title,For loop use case
+QuestionText,True or False: A for loop is the best choice when you don't know in advance how many times you'll need to repeat something.
+Points,1
+Difficulty,2
+TRUE,0,Incorrect - that situation calls for a while loop. A for loop is best when you know the number of repetitions in advance.
+FALSE,100,"Correct - a while loop, not a for loop, is best suited to an unknown number of repetitions."
+
+NewQuestion,TF
+ID,ICS4U-U1-TF5
+Title,Replit and hardware
+QuestionText,True or False: Replit runs your project using your own device's hardware rather than a remote server.
+Points,1
+Difficulty,1
+TRUE,0,Incorrect - Replit runs your project on remote servers and streams the result back to your browser.
+FALSE,100,"Correct - Replit uses remote servers, not your own device's hardware, which is why it works the same on any device."
+
+"//=== WRITTEN RESPONSE - SHORT ANSWER (K/U or Communication, marked manually) ==="
+NewQuestion,WR
+ID,ICS4U-U1-SA1
+Title,let vs const [KU 2][COMM 2]
+QuestionText,"Explain the difference between let and const in TypeScript, and give an example of a situation where you would use each one."
+Points,2
+Difficulty,1
+InitialText,
+AnswerKey,"let declares a variable that can be reassigned later, while const declares a variable that cannot be reassigned after it is set. A good example for let is a loop counter or a running total that changes over time; a good example for const is a value that should never change, like pi or a fixed configuration value."
+
+NewQuestion,WR
+ID,ICS4U-U1-SA2
+Title,Static typing benefit [KU 2][COMM 2]
+QuestionText,"Explain what it means for TypeScript to be ""statically typed"", and why this is useful for building larger, more structured programs."
+Points,2
+Difficulty,2
+InitialText,
+AnswerKey,"Static typing means that type mismatches (like assigning a string where a number is expected) are caught by the compiler before the program ever runs, rather than being discovered later at runtime. This is useful for larger programs because it catches mistakes early, before they cause confusing bugs once the program is already running, making the code more reliable as it grows in size and complexity."
+
+NewQuestion,WR
+ID,ICS4U-U1-SA3
+Title,For vs while loops [KU 2][COMM 2]
+QuestionText,"Explain the difference between a for loop and a while loop, including a situation where you would choose one over the other."
+Points,2
+Difficulty,2
+InitialText,
+AnswerKey,"A for loop is used when you know the exact number of repetitions in advance (it has a starting value, condition, and update built into its structure), while a while loop is used when you don't know in advance how many times you'll repeat, only the condition that should keep it going. For example, printing the numbers 1 to 10 is a good fit for a for loop, while repeating an action until a user enters a specific value is better suited to a while loop."
+
+NewQuestion,WR
+ID,ICS4U-U1-SA4
+Title,Parameters and return type [KU 2][COMM 2]
+QuestionText,"Describe what a function's parameters and return type are, using your own example function (not one copied directly from the lesson)."
+Points,2
+Difficulty,2
+InitialText,
+AnswerKey,"Parameters are the named, typed inputs a function expects to receive when it is called; the return type is the type of value the function sends back using a return statement. Full marks for a correct, original example that clearly labels the parameters and return type (e.g., a function that takes two numbers and returns their difference, or a function that takes a string and returns its length)."
+
+"//=== APPLICATION / THINKING (higher-mark, marked manually) ==="
+NewQuestion,WR
+ID,ICS4U-U1-APP1
+Title,Designing a scores program [THINK 4][COMM 2]
+QuestionText,"A teacher wants a program that stores a list of test scores, prints only the scores that are 70 or higher, and then uses a function to calculate and print the average of all the scores. Describe, step by step, how you would structure this program using the concepts from this lesson - variables, an array, a loop, selection, and a function - explaining the role each concept plays. You do not need to write actual TypeScript code; describe your approach in words (pseudocode is fine if it helps)."
+Points,6
+Difficulty,6
+InitialText,
+AnswerKey,"A strong answer identifies: (1) a number[] array to store the test scores; (2) a for loop to go through each score in the array using its index; (3) an if statement inside the loop to check whether each score is >= 70 before printing it (selection); (4) a separate function that takes the array as a parameter, uses its own loop to add up all the values, divides by the array's length, and returns the average (a number); (5) calling that function and printing its returned result with console.log. Strong answers correctly explain why each concept is needed and connect them in a logical order (store data, loop through it, filter with selection, then use a function to compute and return the average)."
+

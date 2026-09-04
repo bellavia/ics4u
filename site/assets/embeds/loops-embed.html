@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; }
+    #embed-loops { height: 100%; }
+  </style>
+</head>
+<body>
+  <div id="embed-loops"></div>
+  <script src="https://unpkg.com/@stackblitz/sdk@1/bundles/sdk.umd.js"></script>
+  <script>
+    StackBlitzSDK.embedProject('embed-loops', {
+      title: 'Loops Demo',
+      description: 'A simple TypeScript loop',
+      template: 'typescript',
+      files: {
+        'index.ts': "for (let i = 0; i < 5; i++) {\n  console.log(i);\n}",
+        'index.html': "<!DOCTYPE html>\n<html>\n<head></head>\n<body>\n  <script src=\"index.ts\"><\/script>\n</body>\n</html>"
+      }
+    }, {
+      height: '100%',
+      openFile: 'index.ts',
+      view: 'both',
+      hideNavigation: true,
+      forceEmbedLayout: true,
+      devToolsHeight: 300,
+      hideDevTools: false
+    });
+  </script>
+</body>
+</html>

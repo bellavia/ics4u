@@ -1,6 +1,6 @@
 # Assignment 2
 
-**Previous:** [← Basic TypeScript Syntax](5-syntax-basics.md)
+**Previous:** [← Lesson 4: Basic TypeScript Syntax](4-syntax-basics.md)
 
 This assignment gives you hands-on practice with the syntax covered in
 the last lesson. Follow the same steps from
@@ -22,7 +22,7 @@ visible when you run the file.
 !!! warning "Comment your code"
     Add a short comment above **each task** in your code, briefly
     explaining what that section does. See the Comments section of
-    [Basic TypeScript Syntax](5-syntax-basics.md) if you need a
+    [Basic TypeScript Syntax](4-syntax-basics.md) if you need a
     refresher.
 
 ## Task 1: Variables and Types
@@ -73,4 +73,4 @@ already have access — no need to invite them again.
 
 !!! note "Haven't shared your project yet?"
     If you haven't invited your teacher to this project yet, see
-    [Assignment 1](4-assignment.md) for how to do that.
+    [Assignment 1](3-assignment.md) for how to do that.

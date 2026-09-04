@@ -1,6 +1,6 @@
-# Setting Up Replit
+# Lesson 2: Setting Up Replit
 
-**Previous:** [← From ICS3U to ICS4U](1-intro.md)
+**Previous:** [← Lesson 1: From ICS3U to ICS4U](1-intro.md)
 
 We'll use [Replit](https://replit.com){: target="_blank" } to write and run code throughout
 this course.
@@ -133,4 +133,4 @@ created.
 
 ---
 
-**Next:** [Creating a TypeScript Project →](3-organizing-projects.md)
+**Next:** [Lesson 3: Creating a TypeScript Project →](3-organizing-projects.md)

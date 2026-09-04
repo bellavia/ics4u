@@ -1,6 +1,6 @@
-# Creating a TypeScript Project
+# Lesson 3: Creating a TypeScript Project
 
-**Previous:** [← Setting Up Replit](2-setting-up-replit.md)
+**Previous:** [← Lesson 2: Setting Up Replit](2-setting-up-replit.md)
 
 In this lesson you'll create, write, compile, and run your first
 TypeScript file.
@@ -137,4 +137,4 @@ since it confirms your commands actually did what you expected.
 
 ---
 
-**Next:** [Assignment →](4-assignment.md)
+**Next:** [Assignment →](3-assignment.md)

@@ -1,4 +1,4 @@
-# From ICS3U to ICS4U
+# Lesson 1: From ICS3U to ICS4U
 
 Welcome to ICS4U! This course builds directly on the programming
 fundamentals from ICS3U, so before diving into new material, let's
@@ -53,4 +53,4 @@ tools you used in ICS3U.
 
 ---
 
-**Next:** [Setting Up Replit →](2-setting-up-replit.md)
+**Next:** [Lesson 2: Setting Up Replit →](2-setting-up-replit.md)

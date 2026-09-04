@@ -37,6 +37,8 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - md_in_html
   - def_list
@@ -46,12 +48,38 @@ plugins:
   - search
   - glightbox
 
+extra_css:
+  - stylesheets/nav-style.css
+
+extra_javascript:
+  - stylesheets/nav-style.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
   - Home: index.md
   - Unit 1 - Getting Started:
       - 1. From ICS3U to ICS4U: unit1/1-intro.md
       - 2. Setting Up Replit: unit1/2-setting-up-replit.md
       - 3. Creating a TypeScript Project: unit1/3-organizing-projects.md
-      - 4. Assignment 1: unit1/4-assignment.md
-      - 5. Basic TypeScript Syntax: unit1/5-syntax-basics.md
-      - 6. Assignment 2: unit1/6-assignment-2.md
+      - "(Assignment 1)": unit1/3-assignment.md
+      - 4. Basic TypeScript Syntax: unit1/4-syntax-basics.md
+      - "(Assignment 2)": unit1/4-assignment-2.md
+  - Unit 2 - Review:
+      - 1. Setting Up Your Environment (Review): unit2/1-setting-up-environment.md
+      - "- Exercise 1": unit2/1-exercise-setting-up-environment.md
+      - 2. Hello World & Output (Review): unit2/2-hello-world-output.md
+      - "- Exercise 2": unit2/2-exercise-hello-world-output.md
+      - 3. Data Types, Variables, & Errors (Review): unit2/3-data-types-variables-errors.md
+      - "- Exercise 3": unit2/3-exercise-data-types-variables-errors.md
+      - 4. Input, BEDMAS, & Decimal Output (Review): unit2/4-input-bedmas-decimal-output.md
+      - "- Exercise 4": unit2/4-exercise-input-bedmas-decimal-output.md
+      - 5. Strings (Review): unit2/5-strings.md
+      - "- Exercise 5": unit2/5-exercise-strings.md
+      - "(Assignment 1)": unit2/5-assignment-1.md
+      - 6. Selection - If-Statements & Try-Catch: unit2/6-selection-if-trycatch.md
+      - "- Exercise 6": unit2/6-exercise-selection-trycatch.md
+      - 7. Repetition - Loops (Review): unit2/7-repetition-loops.md
+      - "- Exercise 7": unit2/7-exercise-repetition-loops.md
+      - 8. Input-Output Files & Algorithms: unit2/8-files-algorithms.md
+      - "- Exercise 8": unit2/8-exercise-files-algorithms.md
+      - "(Assignment 2)": unit2/8-assignment-2.md

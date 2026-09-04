@@ -1,6 +1,6 @@
-# Basic TypeScript Syntax
+# Lesson 4: Basic TypeScript Syntax
 
-**Previous:** [← Assignment 1](4-assignment.md)
+**Previous:** [← Assignment 1](3-assignment.md)
 
 Now that you're comfortable creating, compiling, and running a
 TypeScript file, let's cover the core syntax you'll be using
@@ -334,4 +334,4 @@ console.log(sumArray([85, 90, 78, 92])); // 345
 
 ---
 
-**Next:** [Assignment 2 →](6-assignment-2.md)
+**Next:** [Assignment 2 →](4-assignment-2.md)

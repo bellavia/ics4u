@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (text.indexOf("Exercise") === 0 || text.indexOf("- Exercise") === 0) {
       link.classList.add("nav-exercise");
     }
-    if (text.indexOf("(Assignment") === 0) {
+    if (text.indexOf("Assignment") === 0) {
       link.classList.add("nav-assignment");
     }
   });

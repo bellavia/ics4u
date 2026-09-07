@@ -1,5 +1,7 @@
 # Lesson 1: From ICS3U to ICS4U
 
+<!-- **Next:** [Lesson 2: Setting Up Replit →](2-setting-up-replit.md) -->
+
 Welcome to ICS4U! This course builds directly on the programming
 fundamentals from ICS3U, so before diving into new material, let's
 briefly recap where you're coming from and where this course is
@@ -21,6 +23,17 @@ You also learned how a computer actually runs your code — from source
 code, down through compiling or interpreting, to binary, to the CPU
 physically executing instructions. These concepts carry over
 completely, no matter what language you used to learn them.
+
+!!! note "Unit 2 is a deeper review"
+    Once you've finished getting set up in this unit, **Unit 2** takes
+    a more thorough pass back through everything listed above —
+    output, variables, data types, user input, strings, selection,
+    loops — this time written entirely in TypeScript, with plenty of
+    practice exercises for each topic. It also introduces a couple of
+    things ICS3U may not have covered, like error handling with
+    try-catch and reading/writing files. Think of Unit 2 as making
+    sure everyone is standing on the same solid TypeScript foundation
+    before we build ICS4U's new material on top of it.
 
 ## The Language for This Course
 
@@ -53,4 +66,5 @@ tools you used in ICS3U.
 
 ---
 
-**Next:** [Lesson 2: Setting Up Replit →](2-setting-up-replit.md)
+<!-- **Next:** [Lesson 2: Setting Up Replit →](2-setting-up-replit.md) -->
+**Next:** Lesson 2: (available soon)

@@ -22,10 +22,10 @@ using industry-standard project management practices. You'll also
 analyze algorithms for effectiveness, and examine the ethical,
 environmental, and career dimensions of the computer science field.
 
-## Jump to a Unit
+<!-- ## Jump to a Unit
 
 - [Unit 1 - Getting Started](unit1/1-intro.md)
-- [Unit 2 - Review](unit2/1-setting-up-environment.md)
+- [Unit 2 - Review](unit2/1-setting-up-environment.md) -->
 
 !!! note "How to use this site"
     - **Top of the page** — tabs for each unit (click one to jump in)

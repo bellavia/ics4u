@@ -66,5 +66,5 @@ tools you used in ICS3U.
 
 ---
 
-<!-- **Next:** [Lesson 2: Setting Up Replit →](2-setting-up-replit.md) -->
-**Next:** Lesson 2: (available soon)
+**Next:** [Lesson 2: Setting Up Replit →](2-setting-up-replit.md)
+<!-- **Next:** Lesson 2: (available soon) -->

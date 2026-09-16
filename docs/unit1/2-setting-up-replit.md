@@ -133,5 +133,5 @@ created.
 
 ---
 
-<!-- **Next:** [Lesson 3: Creating a TypeScript Project →](3-organizing-projects.md) -->
-**Next:** Lesson 3: (available soon)
+**Next:** [Lesson 3: Creating a TypeScript Project →](3-organizing-projects.md)
+<!-- **Next:** Lesson 3: (available soon) -->

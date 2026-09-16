@@ -60,8 +60,8 @@ nav:
   - Unit 1 - Getting Started:
       - 1. From ICS3U to ICS4U: unit1/1-intro.md
       - 2. Setting Up Replit: unit1/2-setting-up-replit.md
-      # - 3. Creating a TypeScript Project: unit1/3-organizing-projects.md
-      # - "Assignment 1": unit1/3-assignment.md
+      - 3. Creating a TypeScript Project: unit1/3-organizing-projects.md
+      - "Assignment 1": unit1/3-assignment.md
       # - 4. Basic TypeScript Syntax: unit1/4-syntax-basics.md
       # - "Assignment 2": unit1/4-assignment-2.md
   # - Unit 2 - Review:
@@ -86,8 +86,8 @@ nav:
 
 exclude_docs: |
   # unit1/2-setting-up-replit.md
-  unit1/3-organizing-projects.md
-  unit1/3-assignment.md
+  # unit1/3-organizing-projects.md
+  # unit1/3-assignment.md
   unit1/4-syntax-basics.md
   unit1/4-assignment-2.md
   unit2/*

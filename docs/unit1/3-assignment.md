@@ -126,4 +126,5 @@ Step 6 in Part 1) so your `ls` output from Step 3 can be reviewed.
 
 ---
 
-**Next:** [Lesson 4: Basic TypeScript Syntax →](4-syntax-basics.md)
+<!-- **Next:** [Lesson 4: Basic TypeScript Syntax →](4-syntax-basics.md) -->
+**Next:** Lesson 4: (available soon)

@@ -62,8 +62,8 @@ nav:
       - 2. Setting Up Replit: unit1/2-setting-up-replit.md
       - 3. Creating a TypeScript Project: unit1/3-organizing-projects.md
       - "Assignment 1": unit1/3-assignment.md
-      # - 4. Basic TypeScript Syntax: unit1/4-syntax-basics.md
-      # - "Assignment 2": unit1/4-assignment-2.md
+      - 4. Basic TypeScript Syntax: unit1/4-syntax-basics.md
+      - "Assignment 2": unit1/4-assignment-2.md
   # - Unit 2 - Review:
   #     - 1. Setting Up Your Environment (Review): unit2/1-setting-up-environment.md
   #     - "- Exercise 1": unit2/1-exercise-setting-up-environment.md
@@ -88,6 +88,6 @@ exclude_docs: |
   # unit1/2-setting-up-replit.md
   # unit1/3-organizing-projects.md
   # unit1/3-assignment.md
-  unit1/4-syntax-basics.md
-  unit1/4-assignment-2.md
+  # unit1/4-syntax-basics.md
+  # unit1/4-assignment-2.md
   unit2/*

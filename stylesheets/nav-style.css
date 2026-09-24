@@ -1,0 +1,11 @@
+/* Styles applied via JS-added classes (see stylesheets/nav-style.js),
+   since the active nav link's href doesn't reliably contain the page
+   slug -- matching on visible text via JS is more reliable. */
+
+.nav-exercise {
+  font-style: italic !important;
+}
+
+.nav-assignment {
+  font-weight: 700 !important;
+}

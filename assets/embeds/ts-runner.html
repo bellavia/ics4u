@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://unpkg.com/codemirror@5.65.16/lib/codemirror.css">
+<link rel="stylesheet" href="https://unpkg.com/codemirror@5.65.16/theme/dracula.css">
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+  .wrap {
+    display: flex;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .pane + .pane {
+    border-left: 1px solid #ccc;
+  }
+  .pane-header {
+    background: #2d2d2d;
+    color: #eee;
+    font-size: 13px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .pane-header .btns { display: flex; gap: 6px; }
+  .pane-header button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .pane-header button.secondary { background: #555; }
+  .pane-header button.secondary:hover { background: #666; }
+  .pane-header button:hover { background: #43a047; }
+  .CodeMirror {
+    flex: 1;
+    font-family: Consolas, Menlo, monospace;
+    font-size: 14px;
+    height: auto !important;
+  }
+  #output {
+    background: #fafafa;
+    color: #222;
+    font-family: Consolas, Menlo, monospace;
+    font-size: 14px;
+    padding: 10px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    min-height: 100px;
+    max-height: 400px;
+  }
+  .err { color: #c00; }
+  .log-line { border-bottom: 1px solid #eee; padding: 2px 0; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="pane">
+    <div class="pane-header">
+      <span>index.ts</span>
+      <div class="btns">
+        <label style="font-size:12px; display:flex; align-items:center; gap:4px; cursor:pointer;">
+          <input type="checkbox" id="autoRunToggle" style="cursor:pointer;">
+          Auto-run
+        </label>
+        <button id="formatBtn" class="secondary">Format</button>
+        <button id="runBtn">▶ Run</button>
+      </div>
+    </div>
+    <textarea id="code" spellcheck="false">for (let i = 0; i < 5; i++) {
+  console.log(i);
+}</textarea>
+  </div>
+  <div class="pane">
+    <div class="pane-header"><span>Console</span></div>
+    <div id="output"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/typescript@5.6.3/lib/typescript.js"></script>
+<script src="https://unpkg.com/codemirror@5.65.16/lib/codemirror.js"></script>
+<script src="https://unpkg.com/codemirror@5.65.16/mode/javascript/javascript.js"></script>
+<script src="https://unpkg.com/prettier@2.8.8/standalone.js"></script>
+<script src="https://unpkg.com/prettier@2.8.8/parser-typescript.js"></script>
+<script>
+  const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+    mode: 'text/typescript',
+    theme: 'dracula',
+    lineNumbers: true,
+    indentUnit: 2,
+    tabSize: 2,
+    indentWithTabs: false,
+    matchBrackets: true,
+    autoCloseBrackets: true,
+    viewportMargin: Infinity
+  });
+
+  function reportHeight() {
+    const height = document.body.scrollHeight;
+    parent.postMessage({ kind: 'resize-iframe', height: height }, '*');
+  }
+  window.addEventListener('load', reportHeight);
+
+  const outputEl = document.getElementById('output');
+  const formatBtn = document.getElementById('formatBtn');
+  const runBtn = document.getElementById('runBtn');
+  const autoRunToggle = document.getElementById('autoRunToggle');
+
+  function appendOutput(text, isError) {
+    const line = document.createElement('div');
+    line.className = 'log-line' + (isError ? ' err' : '');
+    line.textContent = text;
+    outputEl.appendChild(line);
+  }
+
+  function formatCode() {
+    try {
+      const formatted = prettier.format(editor.getValue(), {
+        parser: 'typescript',
+        plugins: [prettierPlugins.typescript],
+        semi: true,
+        singleQuote: true,
+        tabWidth: 2
+      });
+      editor.setValue(formatted);
+    } catch (err) {
+      appendOutput('Format error: ' + err.message, true);
+    }
+  }
+
+  function runCode() {
+    outputEl.innerHTML = '';
+    const source = editor.getValue();
+
+    let jsCode;
+    try {
+      const result = ts.transpileModule(source, {
+        compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.None }
+      });
+      jsCode = result.outputText;
+    } catch (err) {
+      appendOutput('Compile error: ' + err.message, true);
+      return;
+    }
+
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.sandbox = 'allow-scripts';
+    document.body.appendChild(iframe);
+
+    const listener = function (event) {
+      if (event.source !== iframe.contentWindow) return;
+      const { kind, args } = event.data || {};
+      if (kind === 'log') appendOutput(args.join(' '));
+      else if (kind === 'error') appendOutput(args.join(' '), true);
+      else if (kind === 'done') {
+        window.removeEventListener('message', listener);
+        document.body.removeChild(iframe);
+        setTimeout(reportHeight, 50);
+      }
+    };
+    window.addEventListener('message', listener);
+
+    const runnerScript = `
+      (function() {
+        const send = (kind, args) => parent.postMessage({ kind, args: args.map(String) }, '*');
+        console.log = (...a) => send('log', a);
+        console.error = (...a) => send('error', a);
+        try {
+          ${jsCode}
+        } catch (e) {
+          send('error', [e.message]);
+        }
+        send('done', []);
+      })();
+    `;
+    iframe.srcdoc = '<script>' + runnerScript + '<' + '/script>';
+  }
+
+  formatBtn.addEventListener('click', formatCode);
+  runBtn.addEventListener('click', runCode);
+  editor.on('change', function () {
+    setTimeout(reportHeight, 50);
+    if (!autoRunToggle.checked) return;
+    clearTimeout(window._runTimer);
+    window._runTimer = setTimeout(runCode, 800);
+  });
+
+  reportHeight();
+</script>
+
+</body>
+</html>

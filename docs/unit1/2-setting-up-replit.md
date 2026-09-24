@@ -28,17 +28,14 @@ or a phone: the heavy lifting happens elsewhere, not on your device.
 
 ## Create Your First Project
 
-**Step 1.** On your Replit dashboard, click **Import code or design**
+**Step 1.** On your Replit dashboard, hover over **New** in the sidebar
 
-![Import code or design](../assets/images/replit-import-code-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![New button](../assets/images/replit-new-button-circled.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
-**Step 2.** Click **Empty**
+**Step 2.** In the menu that appears, click **Empty project** — Replit
+auto-generates a project name
 
-![Empty project option](../assets/images/replit-empty-option-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
-
-**Step 3.** Click **Create empty project** — Replit auto-generates a project name
-
-![Create empty project button](../assets/images/replit-create-empty-project-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![Empty project option](../assets/images/replit-new-menu-empty-project-circled.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 !!! note "Pop-up about credits?"
     ![Keep using Replit pop-up](../assets/images/replit-credits-popup-circle.png){: width="400" }
@@ -47,11 +44,14 @@ or a phone: the heavy lifting happens elsewhere, not on your device.
     just click the **X** in the top-right corner to close it. You don't
     need to upgrade or pay for anything in this course.
 
-**Step 4.** Click the dropdown arrow next to your project name (top-left)
-and select **Edit project details** to rename it to include your own
-name — for example `ics4u-practice-firstname-lastname`
+**Step 3.** Click your project name (top-left) to open its menu
 
-![Project dropdown menu](../assets/images/replit-project-dropdown-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![Project name menu](../assets/images/replit-project-dropdown-circle-new.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+
+**Step 4.** Select **Edit project details** to rename it to include your
+own name — for example `ics4u-practice-firstname-lastname`
+
+![Edit project details option](../assets/images/replit-edit-project-details-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 **Step 5.** In the **Name** field, clear the auto-generated name and
 type a name that includes your own name, such as
@@ -62,7 +62,7 @@ type a name that includes your own name, such as
     teacher to identify whose work is whose when reviewing or grading
     projects.
 
-![Save changes dialog](../assets/images/replit-save-changes-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![Project details dialog](../assets/images/replit-project-details-name-save-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 ## Using the Shell
 
@@ -70,26 +70,19 @@ The **Shell** is a command-line terminal built into your Replit project.
 This is where you'll run your programs and check what version of tools
 you have installed.
 
-**Step 1.** Open your project, then click the **+** button in the tab
-bar to open a new tool tab
+**Step 1.** Open your project, then click the **+** button next to the
+**Preview** tab to open a new tab
 
-![Shell tools panel](../assets/images/replit-shell-search-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![New tab button](../assets/images/replit-newtab-plus-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
-**Step 2.** In the tools panel that appears, type `shell` into the
-**Search tools...** box, then click **Shell** from the filtered results
-to open a terminal pane
+**Step 2.** In the list that appears, click **Shell**
 
-![Shell search result](../assets/images/replit-shell-result-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![Shell in tools list](../assets/images/replit-newtab-shell-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
-A terminal pane will open, ready for commands:
-
-![Shell open](../assets/images/replit-shell-open.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
-
-Once open, the Shell stays available as its own tab — you can switch
-back to it any time without repeating the search steps above. It only
-closes if you click the **X** on the tab yourself.
-
-![Shell tab](../assets/images/replit-shell-tab-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+A terminal pane will open, ready for commands. Once open, the Shell
+stays available as its own tab — you can switch back to it any time
+without repeating the steps above. It only closes if you click the
+**X** on the tab yourself.
 
 Try typing this into the Shell and pressing Enter:
 
@@ -100,29 +93,20 @@ echo "Hello, Shell!"
 You should see `Hello, Shell!` printed back at you. Congratulations —
 you've just run your first command!
 
-![Hello Shell output](../assets/images/replit-hello-shell-output.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![Hello Shell output](../assets/images/replit-hello-shell-output-new.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 ## Getting Back to Your Projects
 
-**Step 1.** From inside any project, click the small Replit logo in the
-top-left corner
+**Step 1.** From your Replit dashboard, click **Library** in the sidebar
 
-**Step 2.** Select **Home** from the dropdown menu
+![Library sidebar link](../assets/images/replit-library-sidebar-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
-![Replit logo menu](../assets/images/replit-logo-menu-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+This shows the full list of every project you've created.
 
-This takes you back to your dashboard. From there, click **Projects**
-in the sidebar to see the full list of everything you've created.
-
-![Projects page](../assets/images/replit-projects-page-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+![Library projects list](../assets/images/replit-library-projects-list.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 From this page you can open, rename, or organize any project you've
 created.
-
-!!! note "Other options in this menu"
-    This same dropdown also gives you quick access to **Settings**,
-    **Notifications**, and account **Theme** — worth exploring on your
-    own time.
 
 !!! abstract "Keywords"
     - **Replit** — a browser-based platform for writing and running

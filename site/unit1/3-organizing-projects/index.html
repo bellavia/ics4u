@@ -684,7 +684,7 @@
 
 
 <h1 id="lesson-3-creating-a-typescript-project">Lesson 3: Creating a TypeScript Project<a class="headerlink" href="#lesson-3-creating-a-typescript-project" title="Permanent link">¶</a></h1>
-<p><strong>Previous:</strong> <a href="../2-setting-up-replit/">← Lesson 2: Setting Up Replit</a></p>
+<p><strong>Previous:</strong> <a href="../2-setting-up-replit/">← Setting Up Replit</a></p>
 <p>In this lesson you'll create, write, compile, and run your first
 TypeScript file.</p>
 <h2 id="creating-and-opening-a-file">Creating and Opening a File<a class="headerlink" href="#creating-and-opening-a-file" title="Permanent link">¶</a></h2>
@@ -712,20 +712,31 @@ before a <strong>run step</strong> (<code>node</code>) in this course.</p>
 should see <code>hello.ts</code> listed.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-touch-ls-circle.png" data-desc-position="bottom"><img alt="Touch and ls commands" src="../../assets/images/replit-touch-ls-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
 <p><strong>To open the file and start coding:</strong></p>
-<p><strong>Step 1.</strong> Click back into the main project area (left panel), out of
-the Shell</p>
-<p><strong>Step 2.</strong> Click the panel toggle icon in the top-right corner to open
+<p><strong>Step 1.</strong> Click the panel toggle icon in the top-right corner to open
 the side panel, then click the <strong>Files</strong> tab (next to Library) — this
 shows every file in your project</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-panel-toggle-circle.png" data-desc-position="bottom"><img alt="Panel toggle and Files tab" src="../../assets/images/replit-panel-toggle-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
-<p><strong>Step 3.</strong> Click <code>hello.ts</code> from that list — it opens in the code
+<p><strong>Step 2.</strong> Click <code>hello.ts</code> from that list — it opens in the code
 editor, ready for you to type</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-hello-ts-empty-circle.png" data-desc-position="bottom"><img alt="hello.ts opened, empty" src="../../assets/images/replit-hello-ts-empty-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
 <p>Write your code in the editor. For example:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello, TypeScript!"</span><span class="p">);</span>
 </code></pre></div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-hello-ts-code-circle.png" data-desc-position="bottom"><img alt="hello.ts with code" src="../../assets/images/replit-hello-ts-code-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
-<p>Once you're editing, the Shell tab stays open in the background — click
-back to it any time to compile and run your file.</p>
+<div class="admonition note">
+<p class="admonition-title">Do I need to save?</p>
+<p>No — Replit saves your file automatically as you type. There's no
+save button to click and no keyboard shortcut to remember; just
+write your code and move on.</p>
+</div>
+<p>Once you're editing, the <strong>Shell</strong> tab stays open in the background —
+click back to it any time to compile and run your file.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-shell-tab-click-circle.png" data-desc-position="bottom"><img alt="Switching between the Shell and hello.ts tabs" src="../../assets/images/replit-shell-tab-click-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
+<p>Keep an eye on which tab is active — the highlighted tab (with a darker
+background) is the one currently shown below it. Click <strong>Shell</strong> to
+type commands, or click <strong>hello.ts</strong> to go back to editing your code.
+You can switch back and forth as often as you like; nothing you've
+typed is lost when you switch tabs.</p>
 <p><strong>Step 1.</strong> Install TypeScript in your project (only needs to be done
 once per project):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>install<span class="w"> </span>typescript<span class="w"> </span>--save-dev
@@ -733,6 +744,14 @@ once per project):</p>
 <p><strong>Step 2.</strong> Compile your file into plain JavaScript:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npx<span class="w"> </span>tsc<span class="w"> </span>hello.ts
 </code></pre></div>
+<p>Take a look at the <strong>Files</strong> panel on the right after running these two
+commands. Running <code>npm install</code> adds <strong><code>package.json</code></strong> and
+<strong><code>package-lock.json</code></strong> — files that keep track of which packages your
+project depends on (you'll see these under "Packager files"). Then
+compiling with <code>npx tsc hello.ts</code> adds <strong><code>hello.js</code></strong> — the plain
+JavaScript version of your code that was just created alongside
+<code>hello.ts</code>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-package-files-circle.png" data-desc-position="bottom"><img alt="package.json, package-lock.json, and hello.js appear in Files" src="../../assets/images/replit-package-files-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
 <p><strong>Step 3.</strong> Run the compiled file:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>node<span class="w"> </span>hello.js
 </code></pre></div>
@@ -746,9 +765,9 @@ once per project):</p>
 </ul>
 <p>In short: <strong>compile, then run</strong> — two separate steps, since TypeScript
 never runs directly; it always gets converted to JavaScript first.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-tsc-node-output-circle.png" data-desc-position="bottom"><img alt="Compile and run output" src="../../assets/images/replit-tsc-node-output-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
 <p>You should see <code>Hello, TypeScript!</code> printed in the Shell — your code
 compiled and ran successfully.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-tsc-node-output-circle.png" data-desc-position="bottom"><img alt="Compile and run output" src="../../assets/images/replit-tsc-node-output-circle.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
 <h2 id="checking-your-work">Checking Your Work<a class="headerlink" href="#checking-your-work" title="Permanent link">¶</a></h2>
 <p>Now that you've compiled and run your file, run <code>ls</code> again in the
 Shell:</p>
@@ -767,6 +786,18 @@ output on the left, and the <strong>Files</strong> panel on the right, side by s
 Both should show the exact same set of files — a good habit to build,
 since it confirms your commands actually did what you expected.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/replit-ls-files-match.png" data-desc-position="bottom"><img alt="ls output matching Files panel" src="../../assets/images/replit-ls-files-match.png" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" width="700"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Tidying up the Shell</p>
+<p>After running a bunch of commands, your Shell can get cluttered with
+old output. Typing:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>clear
+</code></pre></div>
+<p>wipes everything currently shown in the Shell and gives you a fresh,
+empty prompt. It doesn't undo anything or delete any files — it just
+clears the <em>display</em> so it's easier to read. Your command history is
+still there; you can still press the up arrow to bring back previous
+commands even after clearing.</p>
+</div>
 <div class="admonition abstract">
 <p class="admonition-title">Keywords</p>
 <ul>
@@ -781,10 +812,11 @@ since it confirms your commands actually did what you expected.</p>
 <li><strong><code>node_modules</code></strong> — a folder holding installed packages</li>
 <li><strong><code>package.json</code></strong> — a file tracking which packages a project
   depends on</li>
+<li><strong><code>clear</code></strong> — clears the Shell's display without affecting files</li>
 </ul>
 </div>
 <hr>
-<p><strong>Next:</strong> <a href="../3-assignment/">Assignment →</a></p>
+<p><strong>Next:</strong> <a href="../4-assignment-2/">Assignment →</a></p>
 
 
 

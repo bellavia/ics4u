@@ -1,6 +1,6 @@
 # Lesson 3: Creating a TypeScript Project
 
-**Previous:** [← Lesson 2: Setting Up Replit](2-setting-up-replit.md)
+**Previous:** [← Setting Up Replit](2-setting-up-replit.md)
 
 In this lesson you'll create, write, compile, and run your first
 TypeScript file.
@@ -41,17 +41,16 @@ should see `hello.ts` listed.
 
 **To open the file and start coding:**
 
-**Step 1.** Click back into the main project area (left panel), out of
-the Shell
-
-**Step 2.** Click the panel toggle icon in the top-right corner to open
+**Step 1.** Click the panel toggle icon in the top-right corner to open
 the side panel, then click the **Files** tab (next to Library) — this
 shows every file in your project
 
 ![Panel toggle and Files tab](../assets/images/replit-panel-toggle-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
-**Step 3.** Click `hello.ts` from that list — it opens in the code
+**Step 2.** Click `hello.ts` from that list — it opens in the code
 editor, ready for you to type
+
+![hello.ts opened, empty](../assets/images/replit-hello-ts-empty-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 Write your code in the editor. For example:
 
@@ -61,8 +60,21 @@ console.log("Hello, TypeScript!");
 
 ![hello.ts with code](../assets/images/replit-hello-ts-code-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
-Once you're editing, the Shell tab stays open in the background — click
-back to it any time to compile and run your file.
+!!! note "Do I need to save?"
+    No — Replit saves your file automatically as you type. There's no
+    save button to click and no keyboard shortcut to remember; just
+    write your code and move on.
+
+Once you're editing, the **Shell** tab stays open in the background —
+click back to it any time to compile and run your file.
+
+![Switching between the Shell and hello.ts tabs](../assets/images/replit-shell-tab-click-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
+
+Keep an eye on which tab is active — the highlighted tab (with a darker
+background) is the one currently shown below it. Click **Shell** to
+type commands, or click **hello.ts** to go back to editing your code.
+You can switch back and forth as often as you like; nothing you've
+typed is lost when you switch tabs.
 
 **Step 1.** Install TypeScript in your project (only needs to be done
 once per project):
@@ -76,6 +88,16 @@ npm install typescript --save-dev
 ```bash
 npx tsc hello.ts
 ```
+
+Take a look at the **Files** panel on the right after running these two
+commands. Running `npm install` adds **`package.json`** and
+**`package-lock.json`** — files that keep track of which packages your
+project depends on (you'll see these under "Packager files"). Then
+compiling with `npx tsc hello.ts` adds **`hello.js`** — the plain
+JavaScript version of your code that was just created alongside
+`hello.ts`.
+
+![package.json, package-lock.json, and hello.js appear in Files](../assets/images/replit-package-files-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 **Step 3.** Run the compiled file:
 
@@ -93,10 +115,10 @@ node hello.js
 In short: **compile, then run** — two separate steps, since TypeScript
 never runs directly; it always gets converted to JavaScript first.
 
-![Compile and run output](../assets/images/replit-tsc-node-output-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
-
 You should see `Hello, TypeScript!` printed in the Shell — your code
 compiled and ran successfully.
+
+![Compile and run output](../assets/images/replit-tsc-node-output-circle.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
 ## Checking Your Work
 
@@ -122,6 +144,20 @@ since it confirms your commands actually did what you expected.
 
 ![ls output matching Files panel](../assets/images/replit-ls-files-match.png){: width="700" style="display:block;margin:0 auto;border:1px solid #ccc;border-radius:8px;" }
 
+!!! note "Tidying up the Shell"
+    After running a bunch of commands, your Shell can get cluttered with
+    old output. Typing:
+
+    ```bash
+    clear
+    ```
+
+    wipes everything currently shown in the Shell and gives you a fresh,
+    empty prompt. It doesn't undo anything or delete any files — it just
+    clears the *display* so it's easier to read. Your command history is
+    still there; you can still press the up arrow to bring back previous
+    commands even after clearing.
+
 !!! abstract "Keywords"
     - **`touch`** — creates a new, empty file
     - **`ls`** — lists files and folders in the current location
@@ -134,7 +170,8 @@ since it confirms your commands actually did what you expected.
     - **`node_modules`** — a folder holding installed packages
     - **`package.json`** — a file tracking which packages a project
       depends on
+    - **`clear`** — clears the Shell's display without affecting files
 
 ---
 
-**Next:** [Assignment →](3-assignment.md)
+**Next:** [Assignment →](4-assignment-2.md)

@@ -2,6 +2,8 @@
 
 **Previous:** [← Lesson 4: Basic TypeScript Syntax](4-syntax-basics.md)
 
+**Due Date:** Wednesday, September 23rd, 2026
+
 This assignment gives you hands-on practice with the syntax covered in
 the last lesson. Follow the same steps from
 [Creating a TypeScript Project](3-organizing-projects.md) to create,

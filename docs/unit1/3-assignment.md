@@ -2,6 +2,8 @@
 
 **Previous:** [← Lesson 3: Creating a TypeScript Project](3-organizing-projects.md)
 
+**Due Date:** Friday, September 18th, 2026
+
 ## Part 1: Write and Run Your Program
 
 *Knowledge — 4 marks*

@@ -1,10 +1,10 @@
-# Exercise 4: Input, BEDMAS, & Decimal Output
+# Exercise 3: Input, BEDMAS, & Decimal Output
 
-**Previous:** [← Lesson 4: Input, BEDMAS, & Decimal Output (Review)](4-input-bedmas-decimal-output.md)
+**Previous:** [← Input, BEDMAS, & Decimal Output (Review)](3-input-bedmas-decimal-output.md)
 
 ## Question 1
 
-Create a new file named `u1-e04-1.ts`. Create variables for each
+Create a new file named `u1-e03-1.ts`. Create variables for each
 mathematical expression below and output each result to the console.
 Use BEDMAS.
 
@@ -45,13 +45,13 @@ Variable `k` equals `i` plus 3 multiplied by 5, all divided by `j` plus
 
 ## Question 2
 
-Create a new file named `u1-e04-2.ts`. Write a program that asks the
+Create a new file named `u1-e03-2.ts`. Write a program that asks the
 user for **5 numbers**. Calculate the average and output it (with 2
 decimal places) with an appropriate message.
 
 ## Question 3
 
-Create a new file named `u1-e04-3.ts`. Write a program that asks the
+Create a new file named `u1-e03-3.ts`. Write a program that asks the
 user for the number of apples, the price per apple, and the HST tax
 rate. Output the **subtotal**, **tax**, and **total** with appropriate
 messages.
@@ -66,7 +66,7 @@ messages.
 
 ## Question 4
 
-Create a new file named `u1-e04-4.ts`. Write a program that asks the
+Create a new file named `u1-e03-4.ts`. Write a program that asks the
 user for two numbers (`a` and `b`), then swaps the values so `a` equals
 the original value of `b`, and `b` equals the original value of `a`.
 
@@ -82,10 +82,10 @@ between them is:
 
 $$d = \sqrt{(x2 - x1)^2 + (y2 - y1)^2}$$
 
-Create a new file named `u1-e04-5.ts`. Write a program that asks the
+Create a new file named `u1-e03-5.ts`. Write a program that asks the
 user for the coordinates of points A and B, then calculates and
 outputs the distance `d`, using `Math.pow()` and `Math.sqrt()`.
 
 ---
 
-**Next:** [Lesson 5: Strings (Review) →](5-strings.md)
+**Next:** [Strings (Review) →](4-strings.md)

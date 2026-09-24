@@ -1,10 +1,10 @@
-# Exercise 3: Data Types, Variables, & Errors
+# Exercise 2: Data Types, Variables, & Errors
 
-**Previous:** [← Lesson 3: Data Types, Variables, & Errors (Review)](3-data-types-variables-errors.md)
+**Previous:** [← Data Types, Variables, & Errors (Review)](2-data-types-variables-errors.md)
 
 ## Question 1
 
-Create a new file named `u1-e03-1.ts`. **Without** using variables,
+Create a new file named `u1-e02-1.ts`. **Without** using variables,
 have your program calculate and output the following equations to the
 console (all in the same file):
 
@@ -19,7 +19,7 @@ result compared to (b)*
 
 ## Question 2
 
-Create a new file named `u1-e03-2.ts`. **Without** using variables,
+Create a new file named `u1-e02-2.ts`. **Without** using variables,
 output the following text to the console **exactly** as shown:
 
 **a)**
@@ -51,13 +51,13 @@ five plus five is 10
 
 ## Question 3
 
-Create a new file named `u1-e03-3.ts`. Redo Question 2(b) so all the
+Create a new file named `u1-e02-3.ts`. Redo Question 2(b) so all the
 calculations are stored into variables first, and your `console.log()`
 statements use those variables.
 
 ## Question 4
 
-Create a new file named `u1-e03-4.ts`. Create 3 variables: `year`,
+Create a new file named `u1-e02-4.ts`. Create 3 variables: `year`,
 `month`, and `day`. Make `year` equal `2023`, `month` equal `1`, and
 `day` equal `20`. Output these variables so the result looks exactly
 like:
@@ -77,4 +77,4 @@ like:
 
 ---
 
-**Next:** [Lesson 4: Input, BEDMAS, & Decimal Output (Review) →](4-input-bedmas-decimal-output.md)
+**Next:** [Input, BEDMAS, & Decimal Output (Review) →](3-input-bedmas-decimal-output.md)

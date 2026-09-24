@@ -1,6 +1,6 @@
-# Lesson 2: Hello World & Output (Review)
+# Hello World & Output (Review)
 
-**Previous:** [← Exercise 1: Setting Up Your Environment](1-exercise-setting-up-environment.md)
+**Previous:** [← Assignment 2](../unit1/4-assignment-2.md)
 
 Let's review `console.log()` — the output statement you've already
 been using since Unit 1 — and look at a few details worth reinforcing.
@@ -78,4 +78,4 @@ Goodbye!
 
 ---
 
-**Next:** [Exercise 2: Hello World & Output →](2-exercise-hello-world-output.md)
+**Next:** [Exercise 1: Hello World & Output →](1-exercise-hello-world-output.md)

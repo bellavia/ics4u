@@ -1,6 +1,6 @@
-# Lesson 6: Selection: If-Statements & Try-Catch
+# Selection: If-Statements & Try-Catch
 
-**Previous:** [← Assignment 1](5-assignment-1.md)
+**Previous:** [← Assignment 1](4-assignment-1.md)
 
 Let's review if-statements, then look at a genuinely new topic:
 handling errors gracefully with try-catch.
@@ -172,4 +172,4 @@ equivalent of C#'s `Environment.Exit(0)`.
 
 ---
 
-**Next:** [Exercise 6: Selection & Try-Catch →](6-exercise-selection-trycatch.md)
+**Next:** [Exercise 5: Selection & Try-Catch →](5-exercise-selection-trycatch.md)

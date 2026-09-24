@@ -1,6 +1,6 @@
-# Lesson 4: Input, BEDMAS, & Decimal Output (Review)
+# Input, BEDMAS, & Decimal Output (Review)
 
-**Previous:** [← Exercise 3: Data Types, Variables, & Errors](3-exercise-data-types-variables-errors.md)
+**Previous:** [← Exercise 2: Data Types, Variables, & Errors](2-exercise-data-types-variables-errors.md)
 
 In this lesson we'll review how to receive user input, revisit BEDMAS,
 and look at how TypeScript handles decimal output and division.
@@ -142,4 +142,4 @@ console.log(Math.sqrt(25));  // 5
 
 ---
 
-**Next:** [Exercise 4: Input, BEDMAS, & Decimal Output →](4-exercise-input-bedmas-decimal-output.md)
+**Next:** [Exercise 3: Input, BEDMAS, & Decimal Output →](3-exercise-input-bedmas-decimal-output.md)

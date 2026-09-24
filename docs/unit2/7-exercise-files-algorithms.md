@@ -1,13 +1,13 @@
-# Exercise 8: Input-Output Files & Algorithms
+# Exercise 7: Input-Output Files & Algorithms
 
-**Previous:** [← Lesson 8: Input-Output Files & Algorithms](8-files-algorithms.md)
+**Previous:** [← Input-Output Files & Algorithms](7-files-algorithms.md)
 
 !!! note "Many ways to attempt these"
     Your creativity is important!
 
 ## Question 1
 
-Create a new file named `u1-e08-1.ts`. Create the following input file
+Create a new file named `u1-e07-1.ts`. Create the following input file
 (`input.txt`):
 
 ```
@@ -55,7 +55,7 @@ an output file (`output.txt`). For example:
 
 ## Question 2 — [THINK]
 
-Create a new file named `u1-e08-2.ts`. Rewrite the program above so the
+Create a new file named `u1-e07-2.ts`. Rewrite the program above so the
 input file is comma-delimited (`input.csv`), like this:
 
 ```
@@ -72,7 +72,7 @@ input file is comma-delimited (`input.csv`), like this:
 
 ## Question 3
 
-Create a new file named `u1-e08-3.ts`. Without using any built-in
+Create a new file named `u1-e07-3.ts`. Without using any built-in
 string functions (except `.length`, `.toLowerCase()`, or
 `.toUpperCase()`), write a program that asks the user for a string and
 counts how many times the same letter appears **side by side**. For
@@ -92,7 +92,7 @@ letter pairs total.
 
 ## Question 4
 
-Create a new file named `u1-e08-4.ts`. Without using any built-in
+Create a new file named `u1-e07-4.ts`. Without using any built-in
 string functions (except `.length`, `.toLowerCase()`, or
 `.toUpperCase()`), ask the user for a string and output it with all
 vowels removed. For example:
@@ -108,4 +108,4 @@ String with no vowels: Hll thr wrld
 
 ---
 
-**Next:** [Assignment 2 →](8-assignment-2.md)
+**Next:** [Assignment 2 →](7-assignment-2.md)

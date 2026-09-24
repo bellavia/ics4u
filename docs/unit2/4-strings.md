@@ -1,6 +1,6 @@
-# Lesson 5: Strings (Review)
+# Strings (Review)
 
-**Previous:** [← Exercise 4: Input, BEDMAS, & Decimal Output](4-exercise-input-bedmas-decimal-output.md)
+**Previous:** [← Exercise 3: Input, BEDMAS, & Decimal Output](3-exercise-input-bedmas-decimal-output.md)
 
 Let's review the major string concepts: string variables, input,
 length, positions, substrings, and searching.
@@ -97,4 +97,4 @@ console.log("Hello World, Hello Universe".indexOf("Hello", 1));  // 13
 
 ---
 
-**Next:** [Exercise 5: Strings →](5-exercise-strings.md)
+**Next:** [Exercise 4: Strings →](4-exercise-strings.md)

@@ -1,6 +1,6 @@
-# Exercise 5: Strings
+# Exercise 4: Strings
 
-**Previous:** [← Lesson 5: Strings (Review)](5-strings.md)
+**Previous:** [← Strings (Review)](4-strings.md)
 
 !!! note "Many ways to solve these"
     There's often more than one correct approach. Your creativity is
@@ -8,7 +8,7 @@
 
 ## Question 1
 
-Create a new file named `u1-e05-1.ts`. Create the following string:
+Create a new file named `u1-e04-1.ts`. Create the following string:
 
 ```typescript
 let myString: string = "Computer Science is the best course ever!";
@@ -20,7 +20,7 @@ square-bracket indexing) each on a separate line.
 
 ## Question 2
 
-Create a new file named `u1-e05-2.ts`. Write a program that asks the
+Create a new file named `u1-e04-2.ts`. Write a program that asks the
 user for their first name and last name (2 separate variables). Create
 a third variable called `fullName` and use string concatenation to
 combine them. Output a greeting using their full name, and tell the
@@ -43,7 +43,7 @@ console.log(s);
 Computer Science best
 ```
 
-Create a new file named `u1-e05-3.ts`. **Do not** use `.substring()`
+Create a new file named `u1-e04-3.ts`. **Do not** use `.substring()`
 for these questions:
 
 **a)** Write a program that asks the user to type a sentence, then asks
@@ -56,7 +56,7 @@ characters from the start index up to and including the end index).
 
 ## Question 4: Find and Replace
 
-Create a new file named `u1-e05-4.ts`. Write a program that asks the
+Create a new file named `u1-e04-4.ts`. Write a program that asks the
 user to type a sentence, then a word from that sentence to replace,
 then a word to replace it with. Output the resulting sentence.
 
@@ -79,4 +79,4 @@ Hello Computer Science pupils in this class!
 
 ---
 
-**Next:** [Assignment 1 →](5-assignment-1.md)
+**Next:** [Assignment 1 →](4-assignment-1.md)

@@ -1,6 +1,6 @@
-# Lesson 8: Input-Output Files & Algorithms
+# Input-Output Files & Algorithms
 
-**Previous:** [← Exercise 7: Repetition (Loops)](7-exercise-repetition-loops.md)
+**Previous:** [← Exercise 6: Repetition (Loops)](6-exercise-repetition-loops.md)
 
 In this lesson we'll look at how to read from and write to files, and
 then discuss what an algorithm actually is.
@@ -142,4 +142,4 @@ problem.
 
 ---
 
-**Next:** [Exercise 8: Input-Output Files & Algorithms →](8-exercise-files-algorithms.md)
+**Next:** [Exercise 7: Input-Output Files & Algorithms →](7-exercise-files-algorithms.md)

@@ -1,6 +1,6 @@
-# Lesson 3: Data Types, Variables, & Errors (Review)
+# Data Types, Variables, & Errors (Review)
 
-**Previous:** [← Exercise 2: Hello World & Output](2-exercise-hello-world-output.md)
+**Previous:** [← Exercise 1: Hello World & Output](1-exercise-hello-world-output.md)
 
 Let's review TypeScript's basic data types, variables, and the kinds of
 errors you'll run into while coding.
@@ -130,4 +130,4 @@ Recall the three categories of errors:
 
 ---
 
-**Next:** [Exercise 3: Data Types, Variables, & Errors →](3-exercise-data-types-variables-errors.md)
+**Next:** [Exercise 2: Data Types, Variables, & Errors →](2-exercise-data-types-variables-errors.md)

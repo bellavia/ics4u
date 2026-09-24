@@ -1,6 +1,6 @@
 # Assignment 2
 
-**Previous:** [← Exercise 8: Input-Output Files & Algorithms](8-exercise-files-algorithms.md)
+**Previous:** [← Exercise 7: Input-Output Files & Algorithms](7-exercise-files-algorithms.md)
 
 This assignment covers Lessons 6–8. Create a new file for each
 question as noted below, inside your `unit-1` folder.

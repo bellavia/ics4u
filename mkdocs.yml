@@ -64,30 +64,49 @@ nav:
       - "Assignment 1": unit1/3-assignment.md
       - 4. Basic TypeScript Syntax: unit1/4-syntax-basics.md
       - "Assignment 2": unit1/4-assignment-2.md
-  # - Unit 2 - Review:
-  #     - 1. Setting Up Your Environment (Review): unit2/1-setting-up-environment.md
-  #     - "- Exercise 1": unit2/1-exercise-setting-up-environment.md
-  #     - 2. Hello World & Output (Review): unit2/2-hello-world-output.md
-  #     - "- Exercise 2": unit2/2-exercise-hello-world-output.md
-  #     - 3. Data Types, Variables, & Errors (Review): unit2/3-data-types-variables-errors.md
-  #     - "- Exercise 3": unit2/3-exercise-data-types-variables-errors.md
-  #     - 4. Input, BEDMAS, & Decimal Output (Review): unit2/4-input-bedmas-decimal-output.md
-  #     - "- Exercise 4": unit2/4-exercise-input-bedmas-decimal-output.md
-  #     - 5. Strings (Review): unit2/5-strings.md
-  #     - "- Exercise 5": unit2/5-exercise-strings.md
-  #     - "Assignment 1": unit2/5-assignment-1.md
-  #     - 6. Selection - If-Statements & Try-Catch: unit2/6-selection-if-trycatch.md
-  #     - "- Exercise 6": unit2/6-exercise-selection-trycatch.md
-  #     - 7. Repetition - Loops (Review): unit2/7-repetition-loops.md
-  #     - "- Exercise 7": unit2/7-exercise-repetition-loops.md
-  #     - 8. Input-Output Files & Algorithms: unit2/8-files-algorithms.md
-  #     - "- Exercise 8": unit2/8-exercise-files-algorithms.md
-  #     - "Assignment 2": unit2/8-assignment-2.md
+  - Unit 2 - Review:
+      - 1. Hello World & Output (Review): unit2/1-hello-world-output.md
+      - "- Exercise 1": unit2/1-exercise-hello-world-output.md
+      # - 2. Data Types, Variables, & Errors (Review): unit2/2-data-types-variables-errors.md
+      # - "- Exercise 2": unit2/2-exercise-data-types-variables-errors.md
+      # - 3. Input, BEDMAS, & Decimal Output (Review): unit2/3-input-bedmas-decimal-output.md
+      # - "- Exercise 3": unit2/3-exercise-input-bedmas-decimal-output.md
+      # - 4. Strings (Review): unit2/4-strings.md
+      # - "- Exercise 4": unit2/4-exercise-strings.md
+      # - "Assignment 1": unit2/4-assignment-1.md
+      # - 5. Selection - If-Statements & Try-Catch: unit2/5-selection-if-trycatch.md
+      # - "- Exercise 5": unit2/5-exercise-selection-trycatch.md
+      # - 6. Repetition - Loops (Review): unit2/6-repetition-loops.md
+      # - "- Exercise 6": unit2/6-exercise-repetition-loops.md
+      # - 7. Input-Output Files & Algorithms: unit2/7-files-algorithms.md
+      # - "- Exercise 7": unit2/7-exercise-files-algorithms.md
+      # - "Assignment 2": unit2/7-assignment-2.md
 
+# To fully hide a page from the built site (not just the nav), list it
+# here. This returns a 404 for that page's URL entirely.
 exclude_docs: |
-  # unit1/2-setting-up-replit.md
-  # unit1/3-organizing-projects.md
-  # unit1/3-assignment.md
-  # unit1/4-syntax-basics.md
-  # unit1/4-assignment-2.md
-  unit2/*
+  # unit1/2-computing-environment.md
+  # unit1/2-assignment-1.md
+  # unit1/3-what-is-binary.md
+  # unit1/3-assignment-2.md
+  # unit1/4-setting-up-replit.md
+  # unit1/5-organizing-projects.md
+  # unit1/5-assignment-3.md
+  # unit1/6-supplementary-stackblitz.md
+  # unit1/7-supplementary-stackblitz-typescript-project.md
+  # unit2/1-hello-world-output.md
+  # unit2/1-exercise-hello-world-output.md
+  unit2/2-data-types-variables-errors.md
+  unit2/2-exercise-data-types-variables-errors.md
+  unit2/3-input-bedmas-decimal-output.md
+  unit2/3-exercise-input-bedmas-decimal-output.md
+  unit2/4-strings.md
+  unit2/4-exercise-strings.md
+  unit2/4-assignment-1.md
+  unit2/5-selection-if-trycatch.md
+  unit2/5-exercise-selection-trycatch.md
+  unit2/6-repetition-loops.md
+  unit2/6-exercise-repetition-loops.md
+  unit2/7-files-algorithms.md
+  unit2/7-exercise-files-algorithms.md
+  unit2/7-assignment-2.md

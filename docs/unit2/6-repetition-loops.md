@@ -1,6 +1,6 @@
-# Lesson 7: Repetition: Loops (Review)
+# Repetition: Loops (Review)
 
-**Previous:** [← Exercise 6: Selection & Try-Catch](6-exercise-selection-trycatch.md)
+**Previous:** [← Exercise 5: Selection & Try-Catch](5-exercise-selection-trycatch.md)
 
 Let's review `for` and `while` loops, and look at boolean flags,
 `break`, and nested loops in more depth.
@@ -136,4 +136,4 @@ for (let x = 0; x < 5; x++) {
 
 ---
 
-**Next:** [Exercise 7: Repetition (Loops) →](7-exercise-repetition-loops.md)
+**Next:** [Exercise 6: Repetition (Loops) →](6-exercise-repetition-loops.md)

@@ -4,7 +4,7 @@
 
 ## Question 1
 
-Create a new file named `u1-e06-1.ts`. Using a single `for` loop for
+Create a new file named `u2-e06-1.ts`. Using a single `for` loop for
 each part, produce the following outputs:
 
 **a)** The first 10 natural numbers, each on a separate line:
@@ -40,7 +40,7 @@ Please enter an integer: 30
 
 ## Question 2
 
-Create a new file named `u1-e06-2.ts`. Write a program that asks the
+Create a new file named `u2-e06-2.ts`. Write a program that asks the
 user for a sentence and calculates how many vowels are in it.
 
 !!! note "Hint"
@@ -50,13 +50,13 @@ user for a sentence and calculates how many vowels are in it.
 
 ## Question 3
 
-Create a new file named `u1-e06-3.ts`. Write a program that asks the
+Create a new file named `u2-e06-3.ts`. Write a program that asks the
 user for a sentence, then a character, and calculates how many times
 that character appears in the sentence.
 
 ## Question 4
 
-Create a new file named `u1-e06-4.ts`. Write a program that asks the
+Create a new file named `u2-e06-4.ts`. Write a program that asks the
 user how many numbers they wish to input.
 
 **a)** Use a `for` loop to ask for all the numbers and accumulate their
@@ -81,7 +81,7 @@ that were entered.
 
 ## Question 5: Patterns
 
-Create a new file named `u1-e06-5.ts`. Using nested `for` loops, output
+Create a new file named `u2-e06-5.ts`. Using nested `for` loops, output
 each of the following patterns:
 
 **a)**

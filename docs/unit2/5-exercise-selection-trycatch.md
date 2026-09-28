@@ -8,18 +8,18 @@
 
 ## Question 1
 
-Create a new file named `u1-e05-1.ts`. Write a program that asks the
+Create a new file named `u2-e05-1.ts`. Write a program that asks the
 user to type 'apple', 'orange', or 'banana'. Output an appropriate
 message for the fruit they chose, or an error message otherwise.
 
 ## Question 2
 
-Create a new file named `u1-e05-2.ts`. Write a program that asks the
+Create a new file named `u2-e05-2.ts`. Write a program that asks the
 user to input three numbers. Output the largest of the three.
 
 ## Question 3
 
-Create a new file named `u1-e05-3.ts`. Write a program that asks the
+Create a new file named `u2-e05-3.ts`. Write a program that asks the
 user to input an integer. Output whether the number is odd or even.
 
 ## Question 4: Guess the Number
@@ -30,7 +30,7 @@ The following code generates a random whole number from 1 to 10:
 let r: number = Math.floor(Math.random() * 10) + 1;
 ```
 
-Create a new file named `u1-e05-4.ts`. Write a program that asks the
+Create a new file named `u2-e05-4.ts`. Write a program that asks the
 user to guess a number from 1 to 10, generates a random number using
 the code above, and checks if they guessed correctly.
 
@@ -42,7 +42,7 @@ the code above, and checks if they guessed correctly.
 ## Question 5: Hurricane Categories
 
 The Saffir-Simpson Hurricane Scale rates hurricanes by intensity.
-Create a new file named `u1-e05-5.ts`. Write a program that asks for 3
+Create a new file named `u2-e05-5.ts`. Write a program that asks for 3
 hurricane speeds — the first in mph, the second in kt, and the third
 in km/hr.
 

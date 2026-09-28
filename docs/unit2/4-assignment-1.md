@@ -3,7 +3,7 @@
 **Previous:** [← Exercise 4: Strings](4-exercise-strings.md)
 
 This assignment covers Lessons 1–5. Create a new file for each
-question as noted below, inside your `unit-1` folder.
+question as noted below, inside your `unit-2` folder.
 
 !!! warning "No selection, loops, or arrays"
     **Do not** use selection statements (if-statements), loops
@@ -15,7 +15,7 @@ question as noted below, inside your `unit-1` folder.
 
 ## Question 1: Formulas
 
-Create a new file named `u1-a1-1.ts`. Implement the following, making
+Create a new file named `u2-a1-1.ts`. Implement the following, making
 sure to follow BEDMAS (TypeScript's single `number` type means you
 don't need to worry about truncation here):
 
@@ -40,14 +40,14 @@ An ice cream shop sells three flavours:
 
 A cone costs $0.60.
 
-Create a new file named `u1-a1-2.ts`. Write a program that asks the
+Create a new file named `u2-a1-2.ts`. Write a program that asks the
 user how many scoops of each flavour they want. Output the subtotal,
 tax (13% HST), and grand total in currency format (`$` sign, 2 decimal
 places).
 
 ## Question 3: Piggy Bank
 
-Create a new file named `u1-a1-3.ts`. Johnny has a piggy bank full of
+Create a new file named `u2-a1-3.ts`. Johnny has a piggy bank full of
 coins. Write a program that asks Johnny for the number of each of the
 following coins he has:
 
@@ -63,7 +63,7 @@ positive or negative).
 
 ## Question 4: Speaker Volumes
 
-Create a new file named `u1-a1-4.ts`. Create the following string:
+Create a new file named `u2-a1-4.ts`. Create the following string:
 
 ```typescript
 let levels: string = "89233046";
@@ -80,7 +80,7 @@ total would be `9 + 2 + 3 = 14`.
 
 ## Question 5: Finding All Occurrences
 
-Create a new file named `u1-a1-5.ts`. Create the following string:
+Create a new file named `u2-a1-5.ts`. Create the following string:
 
 ```typescript
 let message: string =

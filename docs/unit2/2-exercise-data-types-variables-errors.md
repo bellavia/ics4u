@@ -6,7 +6,7 @@
 
 ## Question 1
 
-Create a new file named `u1-e02-1.ts`. **Without** using variables,
+Create a new file named `u2-e02-1.ts`. **Without** using variables,
 have your program calculate and output the following equations to the
 console (all in the same file):
 
@@ -21,7 +21,7 @@ result compared to (b)*
 
 ## Question 2
 
-Create a new file named `u1-e02-2.ts`. **Without** using variables,
+Create a new file named `u2-e02-2.ts`. **Without** using variables,
 output the following text to the console **exactly** as shown:
 
 **a)**
@@ -53,13 +53,13 @@ five plus five is 10
 
 ## Question 3
 
-Create a new file named `u1-e02-3.ts`. Redo Question 2(b) so all the
+Create a new file named `u2-e02-3.ts`. Redo Question 2(b) so all the
 calculations are stored into variables first, and your `console.log()`
 statements use those variables.
 
 ## Question 4
 
-Create a new file named `u1-e02-4.ts`. Create 3 variables: `year`,
+Create a new file named `u2-e02-4.ts`. Create 3 variables: `year`,
 `month`, and `day`. Make `year` equal `2023`, `month` equal `1`, and
 `day` equal `20`. Output these variables so the result looks exactly
 like:

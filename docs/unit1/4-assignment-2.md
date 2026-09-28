@@ -10,14 +10,14 @@ the last lesson. Follow the same steps from
 compile, and run a new file for this assignment, named:
 
 ```
-u0-a2.ts
+u1-a2.ts
 ```
 
 !!! note "Naming convention"
-    `u0-a2` = Unit 0, Assignment 2 — following the same `uN-aN` pattern
+    `u1-a2` = Unit 1, Assignment 2 — following the same `uN-aN` pattern
     from ICS3U.
 
-Write **one program** in `u0-a2.ts` that completes Tasks 1–5 below, in
+Write **one program** in `u1-a2.ts` that completes Tasks 1–5 below, in
 order. Use `console.log()` to print the output of each task so it's
 visible when you run the file.
 

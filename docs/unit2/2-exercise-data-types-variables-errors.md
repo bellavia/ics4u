@@ -2,6 +2,8 @@
 
 **Previous:** [← Data Types, Variables, & Errors (Review)](2-data-types-variables-errors.md)
 
+**Due Date:** Tuesday, September 29th, 2026
+
 ## Question 1
 
 Create a new file named `u1-e02-1.ts`. **Without** using variables,
@@ -77,4 +79,5 @@ like:
 
 ---
 
-**Next:** [Input, BEDMAS, & Decimal Output (Review) →](3-input-bedmas-decimal-output.md)
+<!-- **Next:** [Input, BEDMAS, & Decimal Output (Review) →](3-input-bedmas-decimal-output.md) -->
+**Next:** Lesson 3: (available soon)

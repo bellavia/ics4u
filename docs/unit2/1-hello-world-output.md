@@ -1,4 +1,4 @@
-# Hello World & Output (Review)
+# Lesson 1: Hello World & Output (Review)
 
 **Previous:** [← Assignment 2](../unit1/4-assignment-2.md)
 

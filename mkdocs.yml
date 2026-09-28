@@ -67,8 +67,8 @@ nav:
   - Unit 2 - Review:
       - 1. Hello World & Output (Review): unit2/1-hello-world-output.md
       - "- Exercise 1": unit2/1-exercise-hello-world-output.md
-      # - 2. Data Types, Variables, & Errors (Review): unit2/2-data-types-variables-errors.md
-      # - "- Exercise 2": unit2/2-exercise-data-types-variables-errors.md
+      - 2. Data Types, Variables, & Errors (Review): unit2/2-data-types-variables-errors.md
+      - "- Exercise 2": unit2/2-exercise-data-types-variables-errors.md
       # - 3. Input, BEDMAS, & Decimal Output (Review): unit2/3-input-bedmas-decimal-output.md
       # - "- Exercise 3": unit2/3-exercise-input-bedmas-decimal-output.md
       # - 4. Strings (Review): unit2/4-strings.md
@@ -96,8 +96,8 @@ exclude_docs: |
   # unit1/7-supplementary-stackblitz-typescript-project.md
   # unit2/1-hello-world-output.md
   # unit2/1-exercise-hello-world-output.md
-  unit2/2-data-types-variables-errors.md
-  unit2/2-exercise-data-types-variables-errors.md
+  # unit2/2-data-types-variables-errors.md
+  # unit2/2-exercise-data-types-variables-errors.md
   unit2/3-input-bedmas-decimal-output.md
   unit2/3-exercise-input-bedmas-decimal-output.md
   unit2/4-strings.md

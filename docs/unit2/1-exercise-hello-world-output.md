@@ -2,6 +2,8 @@
 
 **Previous:** [← Hello World & Output (Review)](1-hello-world-output.md)
 
+**Due Date:** Monday, September 28th, 2026
+
 ## Question 1
 
 Create a new file named `u2-e01-1.ts`. Output each of the following to

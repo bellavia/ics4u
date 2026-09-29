@@ -1,4 +1,4 @@
-# Input, BEDMAS, & Decimal Output (Review)
+# Lesson 3: Input, BEDMAS, & Decimal Output (Review)
 
 **Previous:** [← Exercise 2: Data Types, Variables, & Errors](2-exercise-data-types-variables-errors.md)
 

@@ -1,4 +1,4 @@
-# Lesson1 2: Data Types, Variables, & Errors (Review)
+# Lesson 2: Data Types, Variables, & Errors (Review)
 
 **Previous:** [← Exercise 1: Hello World & Output](1-exercise-hello-world-output.md)
 

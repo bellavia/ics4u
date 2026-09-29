@@ -79,5 +79,5 @@ like:
 
 ---
 
-<!-- **Next:** [Input, BEDMAS, & Decimal Output (Review) →](3-input-bedmas-decimal-output.md) -->
+**Next:** [Input, BEDMAS, & Decimal Output (Review) →](3-input-bedmas-decimal-output.md)
 **Next:** Lesson 3: (available soon)

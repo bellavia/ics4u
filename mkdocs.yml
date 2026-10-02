@@ -71,8 +71,8 @@ nav:
       - "- Exercise 2": unit2/2-exercise-data-types-variables-errors.md
       - 3. Input, BEDMAS, & Decimal Output (Review): unit2/3-input-bedmas-decimal-output.md
       - "- Exercise 3": unit2/3-exercise-input-bedmas-decimal-output.md
-      # - 4. Strings (Review): unit2/4-strings.md
-      # - "- Exercise 4": unit2/4-exercise-strings.md
+      - 4. Strings (Review): unit2/4-strings.md
+      - "- Exercise 4": unit2/4-exercise-strings.md
       # - "Assignment 1": unit2/4-assignment-1.md
       # - 5. Selection - If-Statements & Try-Catch: unit2/5-selection-if-trycatch.md
       # - "- Exercise 5": unit2/5-exercise-selection-trycatch.md
@@ -100,8 +100,8 @@ exclude_docs: |
   # unit2/2-exercise-data-types-variables-errors.md
   # unit2/3-input-bedmas-decimal-output.md
   # unit2/3-exercise-input-bedmas-decimal-output.md
-  unit2/4-strings.md
-  unit2/4-exercise-strings.md
+  # unit2/4-strings.md
+  # unit2/4-exercise-strings.md
   unit2/4-assignment-1.md
   unit2/5-selection-if-trycatch.md
   unit2/5-exercise-selection-trycatch.md

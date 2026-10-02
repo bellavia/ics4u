@@ -40,5 +40,5 @@ squares and spaces everywhere else:
 
 ---
 
-**Next:** [Data Types, Variables, & Errors (Review) →](2-data-types-variables-errors.md)
+**Next:** [Lesson 2: Data Types, Variables, & Errors (Review) →](2-data-types-variables-errors.md)
 <!-- **Next:** Lesson 2: (available soon) -->

@@ -1,5 +1,6 @@
 ﻿//ICS4U Unit 1 Test - Import into D2L Question Library via Quiz > Add/Edit Questions > Import
 "//15 Multiple Choice, 5 True/False, 4 Written Response (K/U or Comm), 1 Written Response (Application/Thinking)"
+"//Covers: From ICS3U to ICS4U, Setting Up Replit, Creating a TypeScript Project, Basic TypeScript Syntax"
 
 "//=== MULTIPLE CHOICE (1 mark each, 15 marks) ==="
 NewQuestion,MC
@@ -26,6 +27,17 @@ Option,0,"Only variables carry over, but not loops or functions",,"All the funda
 
 NewQuestion,MC
 ID,ICS4U-U1-MC3
+Title,Purpose of Unit 2
+QuestionText,"According to the intro lesson, what is the purpose of Unit 2?"
+Points,1
+Difficulty,2
+Option,100,"A deeper, more thorough review of the fundamentals (output, variables, selection, loops, etc.) written entirely in TypeScript, plus new topics like try-catch and file reading/writing",,Correct.
+Option,0,An introduction to a completely new programming language,,Unit 2 stays in TypeScript; it doesn't switch languages.
+Option,0,The unit where Replit is set up for the first time,,"Replit setup happens in Unit 1, not Unit 2."
+Option,0,A unit focused only on the team project,,The team project is not described as the focus of Unit 2 in the intro lesson.
+
+NewQuestion,MC
+ID,ICS4U-U1-MC4
 Title,let vs const
 QuestionText,What is the key difference between let and const in TypeScript?
 Points,1
@@ -36,7 +48,7 @@ Option,0,let and const are just two different names for the same thing,,They beh
 Option,0,"const is used only for numbers, and let is used only for text",,"Both let and const can hold any type; the difference is about reassignment, not data type."
 
 NewQuestion,MC
-ID,ICS4U-U1-MC4
+ID,ICS4U-U1-MC5
 Title,Type annotation purpose
 QuestionText,What does a type annotation (like : number after a variable name) do?
 Points,1
@@ -47,7 +59,7 @@ Option,0,Deletes the variable once the program ends,,Type annotations don't cont
 Option,0,Converts the variable into an array automatically,,A type annotation specifies a type; it doesn't convert anything into an array.
 
 NewQuestion,MC
-ID,ICS4U-U1-MC5
+ID,ICS4U-U1-MC6
 Title,Static typing
 QuestionText,"What does it mean that TypeScript is ""statically typed""?"
 Points,1
@@ -58,7 +70,7 @@ Option,0,Type mismatches are only discovered while the program is running,,"That
 Option,0,Every variable must be declared using const,,"Static typing is about catching type errors early, not about which keyword you use."
 
 NewQuestion,MC
-ID,ICS4U-U1-MC6
+ID,ICS4U-U1-MC7
 Title,console.log output
 QuestionText,"What does console.log(""Name:"", name, ""Age:"", age) do when called with multiple arguments?"
 Points,1
@@ -69,7 +81,7 @@ Option,0,"Causes a compile error, since console.log only accepts one argument",,
 Option,0,Prints each argument on its own separate line,,"Multiple arguments are printed on the same line, separated by spaces, not on separate lines."
 
 NewQuestion,MC
-ID,ICS4U-U1-MC7
+ID,ICS4U-U1-MC8
 Title,Template literals
 QuestionText,What is the purpose of a template literal like `Name: ${name}`?
 Points,1
@@ -80,7 +92,7 @@ Option,0,It compiles TypeScript into JavaScript,,"Template literals are a syntax
 Option,0,It declares a new function,,"Template literals are used for string interpolation, not function declarations."
 
 NewQuestion,MC
-ID,ICS4U-U1-MC8
+ID,ICS4U-U1-MC9
 Title,Equality operator
 QuestionText,Which operator should be used to compare two values for equality in an if statement?
 Points,1
@@ -91,7 +103,7 @@ Option,0,==>,,This is not a valid TypeScript comparison operator.
 Option,0,!==,,"!== checks for inequality (not equal), not equality."
 
 NewQuestion,MC
-ID,ICS4U-U1-MC9
+ID,ICS4U-U1-MC10
 Title,else if chaining
 QuestionText,"In a chain of if / else if / else statements, what happens once one condition evaluates to true?"
 Points,1
@@ -100,17 +112,6 @@ Option,100,"That block runs, and the remaining conditions in the chain are skipp
 Option,0,"Every block in the chain runs, regardless of which conditions are true",,Only the first matching block runs; the rest are skipped.
 Option,0,The program stops running entirely,,The program continues after the if/else chain; it doesn't stop.
 Option,0,TypeScript throws a compile error,,A valid if/else if/else chain does not cause a compile error.
-
-NewQuestion,MC
-ID,ICS4U-U1-MC10
-Title,&& and ||
-QuestionText,"In the condition (age >= 16 && hasPermission), what must be true for the overall condition to be true?"
-Points,1
-Difficulty,2
-Option,100,Both age >= 16 and hasPermission must be true,,Correct - && requires both sides to be true.
-Option,0,Only one of the two conditions needs to be true,,"That describes ||, not &&."
-Option,0,Neither condition needs to be true,,At least one side (with ||) or both sides (with &&) must be true - not neither.
-Option,0,Only hasPermission is checked; age is ignored,,"&& checks both sides of the expression, not just one."
 
 NewQuestion,MC
 ID,ICS4U-U1-MC11
@@ -206,40 +207,40 @@ FALSE,100,"Correct - a while loop, not a for loop, is best suited to an unknown 
 
 NewQuestion,TF
 ID,ICS4U-U1-TF5
-Title,Replit and hardware
-QuestionText,True or False: Replit runs your project using your own device's hardware rather than a remote server.
+Title,The clear command
+QuestionText,True or False: Typing clear in the Shell deletes your project's files.
 Points,1
 Difficulty,1
-TRUE,0,Incorrect - Replit runs your project on remote servers and streams the result back to your browser.
-FALSE,100,"Correct - Replit uses remote servers, not your own device's hardware, which is why it works the same on any device."
+TRUE,0,Incorrect - clear only wipes the Shell's display; it doesn't undo anything or delete any files.
+FALSE,100,"Correct - clear just clears what's shown in the Shell, without affecting any files or your command history."
 
 "//=== WRITTEN RESPONSE - SHORT ANSWER (K/U or Communication, marked manually) ==="
 NewQuestion,WR
 ID,ICS4U-U1-SA1
-Title,let vs const [KU 2][COMM 2]
-QuestionText,"Explain the difference between let and const in TypeScript, and give an example of a situation where you would use each one."
+Title,Array length and push [KU 2][COMM 2]
+QuestionText,"Explain what the .length property and the .push() method do for an array, using an example (not one copied directly from the lesson)."
 Points,2
 Difficulty,1
 InitialText,
-AnswerKey,"let declares a variable that can be reassigned later, while const declares a variable that cannot be reassigned after it is set. A good example for let is a loop counter or a running total that changes over time; a good example for const is a value that should never change, like pi or a fixed configuration value."
+AnswerKey,"The .length property gives the number of elements currently in an array, which is especially useful as a loop's stopping point so it still works if the array's size changes later. The .push() method adds a new value onto the end of an array, increasing its length by one. Full marks for a correct, original example showing both being used."
 
 NewQuestion,WR
 ID,ICS4U-U1-SA2
-Title,Static typing benefit [KU 2][COMM 2]
-QuestionText,"Explain what it means for TypeScript to be ""statically typed"", and why this is useful for building larger, more structured programs."
+Title,Functions with a void return type [KU 2][COMM 2]
+QuestionText,"Explain what it means for a function to have a return type of void, and give an example of a situation where you'd write a function like this instead of one that returns a value."
 Points,2
 Difficulty,2
 InitialText,
-AnswerKey,"Static typing means that type mismatches (like assigning a string where a number is expected) are caught by the compiler before the program ever runs, rather than being discovered later at runtime. This is useful for larger programs because it catches mistakes early, before they cause confusing bugs once the program is already running, making the code more reliable as it grows in size and complexity."
+AnswerKey,"A void return type means the function doesn't send any value back to wherever it was called - it just performs an action, like printing something to the console. This is used when a function's job is to do something (like displaying a message) rather than calculate and hand back a result to be used elsewhere in the program (e.g., a function that greets a user by printing a message, versus a function that calculates and returns a sum)."
 
 NewQuestion,WR
 ID,ICS4U-U1-SA3
-Title,For vs while loops [KU 2][COMM 2]
-QuestionText,"Explain the difference between a for loop and a while loop, including a situation where you would choose one over the other."
+Title,What npx tsc actually does [KU 2][COMM 2]
+QuestionText,"Explain what happens when you run npx tsc hello.ts, and why node hello.js works afterward but node hello.ts would not."
 Points,2
 Difficulty,2
 InitialText,
-AnswerKey,"A for loop is used when you know the exact number of repetitions in advance (it has a starting value, condition, and update built into its structure), while a while loop is used when you don't know in advance how many times you'll repeat, only the condition that should keep it going. For example, printing the numbers 1 to 10 is a good fit for a for loop, while repeating an action until a user enters a specific value is better suited to a while loop."
+AnswerKey,"npx tsc hello.ts runs the TypeScript compiler on hello.ts, checking the code for type errors and translating it into a new file, hello.js, containing plain JavaScript. Node.js can only run JavaScript, not TypeScript, so node hello.js works because it's running the compiled JavaScript file, while node hello.ts would fail since Node has no way to understand TypeScript's syntax directly."
 
 NewQuestion,WR
 ID,ICS4U-U1-SA4

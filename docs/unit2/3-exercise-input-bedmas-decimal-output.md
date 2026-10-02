@@ -90,5 +90,5 @@ outputs the distance `d`, using `Math.pow()` and `Math.sqrt()`.
 
 ---
 
-<!-- **Next:** [Strings (Review) →](4-strings.md) -->
-**Next:** Lesson 4: (available soon)
+**Next:** [Lesson 4: Strings (Review) →](4-strings.md)
+<!-- **Next:** Lesson 4: (available soon) -->

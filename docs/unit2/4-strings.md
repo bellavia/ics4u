@@ -1,4 +1,4 @@
-# Strings (Review)
+# Lesson 4: Strings (Review)
 
 **Previous:** [← Exercise 3: Input, BEDMAS, & Decimal Output](3-exercise-input-bedmas-decimal-output.md)
 

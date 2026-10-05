@@ -2,6 +2,8 @@
 
 **Previous:** [← Exercise 4: Strings](4-exercise-strings.md)
 
+**Due Date:** Wednesday, October 7th, 2026
+
 This assignment covers Lessons 1–5. Create a new file for each
 question as noted below, inside your `unit-2` folder.
 
@@ -104,4 +106,5 @@ above — **case-insensitive**.
 
 ---
 
-**Next:** [Selection: If-Statements & Try-Catch →](5-selection-if-trycatch.md)
+<!-- **Next:** [Selection: If-Statements & Try-Catch →](5-selection-if-trycatch.md) -->
+**Next:** Lesson 5: (available soon)

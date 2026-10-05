@@ -81,5 +81,5 @@ Hello Computer Science pupils in this class!
 
 ---
 
-<!-- **Next:** [Assignment 1 →](4-assignment-1.md) -->
-**Next:** Lesson 5: (available soon)
+**Next:** [Assignment 1 →](4-assignment-1.md)
+<!-- **Next:** Lesson 5: (available soon) -->

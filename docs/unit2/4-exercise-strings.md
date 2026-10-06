@@ -2,8 +2,6 @@
 
 **Previous:** [← Strings (Review)](4-strings.md)
 
-**Due Date:** Monday, October 5th, 2026
-
 !!! note "Many ways to solve these"
     There's often more than one correct approach. Your creativity is
     important!
@@ -52,6 +50,11 @@ for these questions:
 for a **start index** and a **length** to erase. Output the resulting
 string.
 
+!!! warning "Don't name a variable `length`"
+    `length` is already a built-in name in the browser, so a variable
+    called `length` can clash with it and cause a confusing error. Pick
+    a different name instead, like `eraseLength`.
+
 **b)** Modify the program so instead of a start index and length, it
 asks for a **start index** and an **end index** (removing all
 characters from the start index up to and including the end index).
@@ -82,4 +85,3 @@ Hello Computer Science pupils in this class!
 ---
 
 **Next:** [Assignment 1 →](4-assignment-1.md)
-<!-- **Next:** Lesson 5: (available soon) -->

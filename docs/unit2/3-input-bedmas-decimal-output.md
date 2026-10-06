@@ -1,4 +1,4 @@
-# Lesson 3: Input, BEDMAS, & Decimal Output (Review)
+# Input, BEDMAS, & Decimal Output (Review)
 
 **Previous:** [← Exercise 2: Data Types, Variables, & Errors](2-exercise-data-types-variables-errors.md)
 
@@ -30,13 +30,13 @@ const prompt = promptSync();
 import promptSync from "prompt-sync";
 const prompt = promptSync();
 
-let length: number = 0;
-let width: number = 0;
+let rectLength: number = 0;
+let rectWidth: number = 0;
 
-length = Number(prompt("Please enter a length: "));
-width = Number(prompt("Please enter a width: "));
+rectLength = Number(prompt("Please enter a length: "));
+rectWidth = Number(prompt("Please enter a width: "));
 
-let area: number = length * width;
+let area: number = rectLength * rectWidth;
 console.log("\nThe area of your rectangle is: " + area);
 ```
 

@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lesson-3-input-bedmas-decimal-output-review" class="md-skip">
+        <a href="#input-bedmas-decimal-output-review" class="md-skip">
           Skip to content
         </a>
       
@@ -1102,7 +1102,7 @@
 
 
 
-<h1 id="lesson-3-input-bedmas-decimal-output-review">Lesson 3: Input, BEDMAS, &amp; Decimal Output (Review)<a class="headerlink" href="#lesson-3-input-bedmas-decimal-output-review" title="Permanent link">¶</a></h1>
+<h1 id="input-bedmas-decimal-output-review">Input, BEDMAS, &amp; Decimal Output (Review)<a class="headerlink" href="#input-bedmas-decimal-output-review" title="Permanent link">¶</a></h1>
 <p><strong>Previous:</strong> <a href="../2-exercise-data-types-variables-errors/">← Exercise 2: Data Types, Variables, &amp; Errors</a></p>
 <p>In this lesson we'll review how to receive user input, revisit BEDMAS,
 and look at how TypeScript handles decimal output and division.</p>
@@ -1121,13 +1121,13 @@ definitions (only needs to be done once per project):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">promptSync</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"prompt-sync"</span><span class="p">;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">prompt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">promptSync</span><span class="p">();</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">length</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">let</span><span class="w"> </span><span class="nx">rectLength</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">rectWidth</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nx">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"Please enter a length: "</span><span class="p">));</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nx">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"Please enter a width: "</span><span class="p">));</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nx">rectLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"Please enter a length: "</span><span class="p">));</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nx">rectWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">"Please enter a width: "</span><span class="p">));</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="kd">let</span><span class="w"> </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">length</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">width</span><span class="p">;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="kd">let</span><span class="w"> </span><span class="nx">area</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">rectLength</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">rectWidth</span><span class="p">;</span>
 <a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"\nThe area of your rectangle is: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">area</span><span class="p">);</span>
 </code></pre></div>
 <p><code>prompt("...")</code> displays the message, keeps the cursor on the same

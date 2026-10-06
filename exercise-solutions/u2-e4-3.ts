@@ -4,9 +4,9 @@ let sentence: string = prompt("Type a sentence: ");
 
 // a) start index and length
 let start: number = Number(prompt("Start index to erase: "));
-let length: number = Number(prompt("Number of characters to erase: "));
+let eraseLength: number = Number(prompt("Number of characters to erase: "));
 
-let resultA: string = sentence.slice(0, start) + sentence.slice(start + length);
+let resultA: string = sentence.slice(0, start) + sentence.slice(start + eraseLength);
 console.log("\nResult (a): " + resultA);
 
 // b) start index and end index (end index is erased too)

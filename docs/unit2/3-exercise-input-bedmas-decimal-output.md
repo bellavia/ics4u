@@ -107,8 +107,8 @@ messages.
 ## Question 4
 
 Create a new file named `u2-e03-4.ts`. Write a program that asks the
-user for two numbers (`a` and `b`), then swaps the values so `a` equals
-the original value of `b`, and `b` equals the original value of `a`.
+user for two numbers (`m` and `n`), then swaps the values so `m` equals
+the original value of `n`, and `n` equals the original value of `m`.
 
 !!! note "Hint"
     You'll need a third, temporary variable to hold one of the values

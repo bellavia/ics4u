@@ -15,3 +15,5 @@ let end2: number = Number(prompt("End index to erase (inclusive): "));
 
 let resultB: string = sentence.slice(0, start2) + sentence.slice(end2 + 1);
 console.log("\nResult (b): " + resultB);
+
+export {};

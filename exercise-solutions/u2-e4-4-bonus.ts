@@ -12,3 +12,5 @@ if (index === -1) {
 } else {
     console.log(sentence.slice(0, index) + newWord + sentence.slice(index + oldWord.length));
 }
+
+export {};

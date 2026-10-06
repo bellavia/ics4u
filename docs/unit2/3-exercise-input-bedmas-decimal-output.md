@@ -2,8 +2,6 @@
 
 **Previous:** [← Input, BEDMAS, & Decimal Output (Review)](3-input-bedmas-decimal-output.md)
 
-**Due Date:** Thursday, October 1st, 2026
-
 ## Question 1
 
 Create a new file named `u2-e03-1.ts`. Create variables for each
@@ -63,8 +61,48 @@ messages.
     `.13`.
 
 !!! note "Currency formatting"
-    Output currency values with a `$` sign and 2 decimal places, using
-    `.toFixed(2)`.
+    Format your currency values with `Intl.NumberFormat`. Create the
+    formatter **once**, near the top of your file, then call
+    `.format()` on each value you output:
+
+    ```typescript
+    const money = new Intl.NumberFormat("en-CA", { style: "currency", currency: "CAD" });
+
+    console.log(money.format(4.5));      // $4.50
+    ```
+
+    It adds the `$` sign and always shows 2 decimal places. For large
+    amounts it also adds a comma (`$1,234.50`).
+
+!!! example "Example"
+    If the user enters **6** apples, a price of **.50**, and a tax rate
+    of **.13**, your output should show:
+
+    ```
+    Subtotal: $3.00
+    Tax: $0.39
+    Total: $3.39
+    ```
+
+!!! info "Why not `.toFixed(2)`?"
+    Computers store decimals in binary, and some decimals can't be
+    stored exactly. For example, `0.585` is really stored as
+    `0.58499999999999996...`, so `.toFixed(2)` sees a value just below
+    the halfway point and rounds **down**:
+
+    ```typescript
+    console.log((0.585).toFixed(2));   // 0.58  (expected 0.59)
+    console.log((1.005).toFixed(2));   // 1.00  (expected 1.01)
+    ```
+
+    Possible fixes:
+
+    - **`Intl.NumberFormat`** (used above) rounds these correctly.
+    - **`Math.round(x * 100) / 100`** shifts the decimal, rounds to a
+      whole number, then shifts back. It fixes `0.585` but still gets a
+      few values wrong, like `1.005`.
+    - **Work in whole cents** (e.g. `75` cents instead of `0.75`) and
+      divide by 100 only when displaying. Real payment systems do this.
 
 ## Question 4
 
@@ -90,5 +128,4 @@ outputs the distance `d`, using `Math.pow()` and `Math.sqrt()`.
 
 ---
 
-**Next:** [Lesson 4: Strings (Review) →](4-strings.md)
-<!-- **Next:** Lesson 4: (available soon) -->
+**Next:** [Strings (Review) →](4-strings.md)

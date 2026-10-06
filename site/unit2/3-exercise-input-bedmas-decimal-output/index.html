@@ -1082,7 +1082,6 @@
 
 <h1 id="exercise-3-input-bedmas-decimal-output">Exercise 3: Input, BEDMAS, &amp; Decimal Output<a class="headerlink" href="#exercise-3-input-bedmas-decimal-output" title="Permanent link">¶</a></h1>
 <p><strong>Previous:</strong> <a href="../3-input-bedmas-decimal-output/">← Input, BEDMAS, &amp; Decimal Output (Review)</a></p>
-<p><strong>Due Date:</strong> Thursday, October 1st, 2026</p>
 <h2 id="question-1">Question 1<a class="headerlink" href="#question-1" title="Permanent link">¶</a></h2>
 <p>Create a new file named <code>u2-e03-1.ts</code>. Create variables for each
 mathematical expression below and output each result to the console.
@@ -1128,8 +1127,43 @@ messages.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Currency formatting</p>
-<p>Output currency values with a <code>$</code> sign and 2 decimal places, using
-<code>.toFixed(2)</code>.</p>
+<p>Format your currency values with <code>Intl.NumberFormat</code>. Create the
+formatter <strong>once</strong>, near the top of your file, then call
+<code>.format()</code> on each value you output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">money</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Intl</span><span class="p">.</span><span class="nx">NumberFormat</span><span class="p">(</span><span class="s2">"en-CA"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">style</span><span class="o">:</span><span class="w"> </span><span class="s2">"currency"</span><span class="p">,</span><span class="w"> </span><span class="nx">currency</span><span class="o">:</span><span class="w"> </span><span class="s2">"CAD"</span><span class="w"> </span><span class="p">});</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">money</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="mf">4.5</span><span class="p">));</span><span class="w">      </span><span class="c1">// $4.50</span>
+</code></pre></div>
+<p>It adds the <code>$</code> sign and always shows 2 decimal places. For large
+amounts it also adds a comma (<code>$1,234.50</code>).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>If the user enters <strong>6</strong> apples, a price of <strong>.50</strong>, and a tax rate
+of <strong>.13</strong>, your output should show:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Subtotal: $3.00
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Tax: $0.39
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Total: $3.39
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Why not <code>.toFixed(2)</code>?</p>
+<p>Computers store decimals in binary, and some decimals can't be
+stored exactly. For example, <code>0.585</code> is really stored as
+<code>0.58499999999999996...</code>, so <code>.toFixed(2)</code> sees a value just below
+the halfway point and rounds <strong>down</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mf">0.585</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">));</span><span class="w">   </span><span class="c1">// 0.58  (expected 0.59)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mf">1.005</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mf">2</span><span class="p">));</span><span class="w">   </span><span class="c1">// 1.00  (expected 1.01)</span>
+</code></pre></div>
+<p>Possible fixes:</p>
+<ul>
+<li><strong><code>Intl.NumberFormat</code></strong> (used above) rounds these correctly.</li>
+<li><strong><code>Math.round(x * 100) / 100</code></strong> shifts the decimal, rounds to a
+  whole number, then shifts back. It fixes <code>0.585</code> but still gets a
+  few values wrong, like <code>1.005</code>.</li>
+<li><strong>Work in whole cents</strong> (e.g. <code>75</code> cents instead of <code>0.75</code>) and
+  divide by 100 only when displaying. Real payment systems do this.</li>
+</ul>
 </div>
 <h2 id="question-4">Question 4<a class="headerlink" href="#question-4" title="Permanent link">¶</a></h2>
 <p>Create a new file named <code>u2-e03-4.ts</code>. Write a program that asks the
@@ -1149,8 +1183,7 @@ between them is:</p>
 user for the coordinates of points A and B, then calculates and
 outputs the distance <code>d</code>, using <code>Math.pow()</code> and <code>Math.sqrt()</code>.</p>
 <hr>
-<p><strong>Next:</strong> <a href="../4-strings/">Lesson 4: Strings (Review) →</a></p>
-<!-- **Next:** Lesson 4: (available soon) -->
+<p><strong>Next:</strong> <a href="../4-strings/">Strings (Review) →</a></p>
 
 
 

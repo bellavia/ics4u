@@ -52,9 +52,6 @@ something has happened, often combined with `break` to exit a loop
 early:
 
 ```typescript
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 let validInput: boolean = false;
 let x: number = 0;
 

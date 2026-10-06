@@ -27,9 +27,6 @@ const prompt = promptSync();
 ## Review: User Input with `prompt()`
 
 ```typescript
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 let rectLength: number = 0;
 let rectWidth: number = 0;
 

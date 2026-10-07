@@ -6,6 +6,25 @@
     There are many ways to attempt these questions — your creativity
     is important!
 
+!!! tip "Keeping variables separate between files"
+    A TypeScript file with no `import` or `export` is treated as a
+    global script, so every such file shares one set of variable
+    names. If two files both declare `let x`, you'll get the error
+    "Cannot redeclare block-scoped variable 'x'" (or a clash with a
+    built-in name like `length` or `name`).
+
+    To give a file its own private scope, add this line at the very
+    end (or top) of the file:
+
+    ```typescript
+    export {};
+    ```
+
+    This turns the file into a module, so its variables no longer
+    clash with other files. Files that already start with
+    `import promptSync from "prompt-sync";` are already modules and
+    don't need it.
+
 ## Question 1
 
 Create a new file named `u2-e05-1.ts`. Write a program that asks the

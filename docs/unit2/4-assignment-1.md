@@ -106,5 +106,5 @@ above — **case-insensitive**.
 
 ---
 
-<!-- **Next:** [Selection: If-Statements & Try-Catch →](5-selection-if-trycatch.md) -->
-**Next:** Lesson 5: (available soon)
+**Next:** [Selection: If-Statements & Try-Catch →](5-selection-if-trycatch.md)
+<!-- **Next:** Lesson 5: (available soon) -->

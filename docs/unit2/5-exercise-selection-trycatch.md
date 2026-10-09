@@ -2,6 +2,8 @@
 
 **Previous:** [← Selection: If-Statements & Try-Catch](5-selection-if-trycatch.md)
 
+**Due Date:** Tuesday, October 13th, 2026
+
 !!! note "Try to use logical operators where you can"
     There are many ways to attempt these questions — your creativity
     is important!
@@ -88,4 +90,5 @@ logical operators. Use a try-catch block to handle bad data.
 
 ---
 
-**Next:** [Repetition: Loops (Review) →](6-repetition-loops.md)
+<!-- **Next:** [Repetition: Loops (Review) →](6-repetition-loops.md) -->
+**Next:** Lesson 6: (available soon)

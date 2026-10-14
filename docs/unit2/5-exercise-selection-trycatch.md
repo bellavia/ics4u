@@ -90,5 +90,5 @@ logical operators. Use a try-catch block to handle bad data.
 
 ---
 
-<!-- **Next:** [Repetition: Loops (Review) →](6-repetition-loops.md) -->
-**Next:** Lesson 6: (available soon)
+**Next:** [Repetition: Loops (Review) →](6-repetition-loops.md)
+<!-- **Next:** Lesson 6: (available soon) -->

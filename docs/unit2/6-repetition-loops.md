@@ -1,4 +1,4 @@
-# Repetition: Loops (Review)
+# Lesson 6: Repetition: Loops (Review)
 
 **Previous:** [← Exercise 5: Selection & Try-Catch](5-exercise-selection-trycatch.md)
 

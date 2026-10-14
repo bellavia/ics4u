@@ -2,6 +2,8 @@
 
 **Previous:** [← Repetition: Loops (Review)](6-repetition-loops.md)
 
+**Due Date:** Friday, October 16th, 2026
+
 ## Question 1
 
 Create a new file named `u2-e06-1.ts`. Using a single `for` loop for
@@ -138,4 +140,5 @@ each of the following patterns:
 
 ---
 
-**Next:** [Input-Output Files & Algorithms →](7-files-algorithms.md)
+<!-- **Next:** [Input-Output Files & Algorithms →](7-files-algorithms.md) -->
+**Next:** Lesson 7: (available soon)

@@ -140,5 +140,5 @@ each of the following patterns:
 
 ---
 
-<!-- **Next:** [Input-Output Files & Algorithms →](7-files-algorithms.md) -->
-**Next:** Lesson 7: (available soon)
+**Next:** [Input-Output Files & Algorithms →](7-files-algorithms.md)
+<!-- **Next:** Lesson 7: (available soon) -->

@@ -1,5 +1,7 @@
 # Exercise 7: Input-Output Files & Algorithms
 
+**Due Date:** Tuesday, October 20th, 2026
+
 **Previous:** [← Input-Output Files & Algorithms](7-files-algorithms.md)
 
 !!! note "Many ways to attempt these"
@@ -108,4 +110,5 @@ String with no vowels: Hll thr wrld
 
 ---
 
-**Next:** [Assignment 2 →](7-assignment-2.md)
+<!-- **Next:** [Assignment 2 →](7-assignment-2.md) -->
+**Next:** Assignment 2: (available soon)

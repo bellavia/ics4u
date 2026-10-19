@@ -1,4 +1,4 @@
-# Input-Output Files & Algorithms
+# Lesson 7: Input-Output Files & Algorithms
 
 **Previous:** [← Exercise 6: Repetition (Loops)](6-exercise-repetition-loops.md)
 

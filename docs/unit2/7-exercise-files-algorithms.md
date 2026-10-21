@@ -110,5 +110,5 @@ String with no vowels: Hll thr wrld
 
 ---
 
-<!-- **Next:** [Assignment 2 →](7-assignment-2.md) -->
-**Next:** Assignment 2: (available soon)
+**Next:** [Assignment 2 →](7-assignment-2.md)
+<!-- **Next:** Assignment 2: (available soon) -->

@@ -80,7 +80,7 @@ nav:
       - "- Exercise 6": unit2/6-exercise-repetition-loops.md
       - 7. Input-Output Files & Algorithms: unit2/7-files-algorithms.md
       - "- Exercise 7": unit2/7-exercise-files-algorithms.md
-      # - "Assignment 2": unit2/7-assignment-2.md
+      - "Assignment 2": unit2/7-assignment-2.md
 
 # To fully hide a page from the built site (not just the nav), list it
 # here. This returns a 404 for that page's URL entirely.
@@ -109,4 +109,4 @@ exclude_docs: |
   # unit2/6-exercise-repetition-loops.md
   # unit2/7-files-algorithms.md
   # unit2/7-exercise-files-algorithms.md
-  unit2/7-assignment-2.md
+  # unit2/7-assignment-2.md

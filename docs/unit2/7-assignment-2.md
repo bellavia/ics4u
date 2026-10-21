@@ -2,6 +2,8 @@
 
 **Previous:** [← Exercise 7: Input-Output Files & Algorithms](7-exercise-files-algorithms.md)
 
+**Due Date:** Monday, October 26th, 2026
+
 This assignment covers Lessons 6–8. Create a new file for each
 question as noted below, inside your `unit-2` folder.
 
@@ -9,6 +11,8 @@ question as noted below, inside your `unit-2` folder.
     Make sure your teacher has been invited to this Replit project.
 
 ## Question 1: Student Login Generator
+
+*Application — 5 marks | Communication — 1 mark*
 
 A student login is generated using the **first 7 letters** of a last
 name, plus the **first 2 letters** of a first name, plus the **last 3
@@ -43,6 +47,8 @@ that is 3 lines: first name, last name, and student number.
 
 ## Question 2: Electricity Bill
 
+*Application — 4 marks | Communication — 1 mark*
+
 Create a new file named `u2-a2-2.ts`. Write a program that asks the
 user for a number of electricity units used (a whole number), and
 calculates their total bill:
@@ -54,6 +60,8 @@ calculates their total bill:
 - An additional 20% surcharge is added to the total bill
 
 ## Question 3: Golf Par Ratings
+
+*Application — 4 marks | Communication — 1 mark*
 
 The USGA yardage guidelines for par ratings:
 
@@ -70,6 +78,8 @@ and outputs whether the hole is a par 3, 4, 5, or 6. Use logical
 operators in your conditions.
 
 ## Question 4: Factorial
+
+*Thinking — 2 marks | Application — 4 marks | Communication — 1 mark*
 
 The factorial of a non-negative integer `n` (written `n!`) is the
 product of all positive integers less than or equal to `n`. For
@@ -88,6 +98,8 @@ Create a new file named `u2-a2-4.ts`. Write a program that:
     and the for loop doesn't need to run at all.
 
 ## Question 5: Patterns
+
+*Thinking — 2 marks | Application — 6 marks | Communication — 1 mark*
 
 Using nested `for` loops, output each of the following patterns:
 
@@ -123,7 +135,32 @@ based on that number of rows (example shows 5 rows):
 *
 ```
 
-Create a new file named `u2-a2-5.ts` for all three parts (submit only
+**d)** Repeat the pattern from part (c), but this time read the
+parameters from a file instead of asking the user. The file
+(`pattern.txt`) has two lines: the number of rows, then the character
+to print. For example, this file would produce the output below:
+
+**Sample input file (`pattern.txt`):**
+```
+4
+#
+```
+
+**Sample output:**
+```
+# # # #
+# # #
+# #
+#
+```
+
+!!! note "Notes"
+    - Remember that file contents are read as strings — convert the
+      number of rows with `Number()`.
+    - Create your own `pattern.txt` to test, and try different row
+      counts and characters.
+
+Create a new file named `u2-a2-5.ts` for all four parts (submit only
 one file for this question).
 
 ---

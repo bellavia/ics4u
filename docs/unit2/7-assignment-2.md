@@ -2,7 +2,7 @@
 
 **Previous:** [← Exercise 7: Input-Output Files & Algorithms](7-exercise-files-algorithms.md)
 
-**Due Date:** Monday, October 26th, 2026
+**Due Date:** Tuesday, October 27th, 2026
 
 This assignment covers Lessons 6–8. Create a new file for each
 question as noted below, inside your `unit-2` folder.

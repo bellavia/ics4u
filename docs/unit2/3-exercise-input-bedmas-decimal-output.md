@@ -2,6 +2,8 @@
 
 **Previous:** [← Input, BEDMAS, & Decimal Output (Review)](3-input-bedmas-decimal-output.md)
 
+**Due Date:** Thursday, October 1st, 2026
+
 ## Question 1
 
 Create a new file named `u2-e03-1.ts`. Create variables for each

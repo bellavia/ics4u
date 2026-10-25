@@ -2,6 +2,8 @@
 
 **Previous:** [← Strings (Review)](4-strings.md)
 
+**Due Date:** Monday, October 5th, 2026
+
 !!! note "Many ways to solve these"
     There's often more than one correct approach. Your creativity is
     important!

@@ -28,6 +28,26 @@ each part, produce the following outputs:
 0 3 6 9 12 15 18 21
 ```
 
+!!! note "Tip: Outputting on a Single Line"
+    `console.log()` always ends with a new line. To keep everything on
+    one line, create an empty string variable **before** your loop:
+    ```typescript
+    let output: string = "";
+    ```
+    Inside the loop, add each number and a space to it:
+    ```typescript
+    output += i + " ";
+    ```
+    The `+=` operator is shorthand. The line above means exactly the
+    same thing as:
+    ```typescript
+    output = output + i + " ";
+    ```
+    It takes what's already in `output`, joins the new number and a
+    space onto the end, and stores the result back in `output`. Once the
+    loop finishes, call `console.log(output)` **once** to display the
+    whole line.
+    
 **c)** Every 4th number backwards from 50 to 40, separated by a space:
 ```
 50 46 42

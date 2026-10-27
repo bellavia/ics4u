@@ -1297,13 +1297,31 @@ each part, produce the following outputs:</p>
 <p><strong>b)</strong> Every 3rd number from 0 to 21, separated by a space on one line:
 </p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>0 3 6 9 12 15 18 21
 </code></pre></div><p></p>
+<div class="admonition note">
+<p class="admonition-title">Outputting on a Single Line</p>
+<p><code>console.log()</code> always ends with a new line, so calling it inside
+the loop puts each number on its own line. Instead, build up a
+string with <strong>concatenation</strong> inside the loop, then output it
+<strong>once</strong> after the loop finishes:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">21</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nx">output</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">" "</span><span class="p">;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+</code></pre></div>
+Start with an empty string (<code>""</code>), add each number plus a space
+with <code>+=</code> on every pass, and only call <code>console.log()</code> after the
+loop ends. Use this same approach for parts <strong>c)</strong> and <strong>d)</strong>.<p></p>
+</div>
 <p><strong>c)</strong> Every 4th number backwards from 50 to 40, separated by a space:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>50 46 42
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>50 46 42
 </code></pre></div><p></p>
 <p><strong>d)</strong> All numbers between a user-inputted number <code>x</code> and 35, separated
 by a space:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Please enter an integer: 30
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>30 31 32 33 34 35
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Please enter an integer: 30
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>30 31 32 33 34 35
 </code></pre></div><p></p>
 <h2 id="question-2">Question 2<a class="headerlink" href="#question-2" title="Permanent link">¶</a></h2>
 <p>Create a new file named <code>u2-e06-2.ts</code>. Write a program that asks the
@@ -1328,8 +1346,8 @@ that were entered.</p>
 <div class="admonition note">
 <p class="admonition-title">Hint</p>
 <p>Before your loop starts, create:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">highest</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="kc">Infinity</span><span class="p">;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">lowest</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">Infinity</span><span class="p">;</span>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">highest</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="kc">Infinity</span><span class="p">;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">lowest</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">Infinity</span><span class="p">;</span>
 </code></pre></div>
 <code>-Infinity</code> and <code>Infinity</code> work well here since any real number
 entered will immediately be lower/higher than them, letting your
@@ -1342,34 +1360,34 @@ input.<p></p>
 <p>Create a new file named <code>u2-e06-5.ts</code>. Using nested <code>for</code> loops, output
 each of the following patterns:</p>
 <p><strong>a)</strong>
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>0 1 2 3 4 5
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>0 1 2 3 4 5
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>0 1 2 3 4 5
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>0 1 2 3 4 5
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>0 1 2 3 4 5
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>0 1 2 3 4 5
 </code></pre></div><p></p>
 <p><strong>b)</strong>
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>0 1 2 3 4 5
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>1 2 3 4 5 6
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>2 3 4 5 6 7
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>0 1 2 3 4 5
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>1 2 3 4 5 6
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>2 3 4 5 6 7
 </code></pre></div><p></p>
 <p><strong>c)</strong>
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>     *
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>   ***
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a> *****
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>*******
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>     *
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>   ***
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a> *****
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>*******
 </code></pre></div><p></p>
 <p><strong>d)</strong>
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>1
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>22
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>333
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>4444
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>55555
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>1
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>22
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>333
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>4444
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>55555
 </code></pre></div><p></p>
 <p><strong>e)</strong>
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>1
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>2 3
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>4 5 6
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>7 8 9 10
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>11 12 13 14 15
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>1
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>2 3
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>4 5 6
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>7 8 9 10
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>11 12 13 14 15
 </code></pre></div><p></p>
 <div class="admonition note">
 <p class="admonition-title">Hint</p>
@@ -1377,11 +1395,11 @@ each of the following patterns:</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">BONUS: Floyd's Triangle</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>1
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>212
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>32123
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>4321234
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>543212345
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>1
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>212
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>32123
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>4321234
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>543212345
 </code></pre></div>
 </div>
 <hr>

@@ -88,4 +88,4 @@ above.
 
 ---
 
-**Next:** [Assignment 2 →](6-assignment-2.md)
+**Next:** [Lesson 7: Objects →](7-objects.md)

@@ -95,7 +95,10 @@ nav:
       # - "- Exercise 5": unit3/5-exercise-arrays-and-functions.md
       # - 6. Two-Dimensional Arrays: unit3/6-two-dimensional-arrays.md
       # - "- Exercise 6": unit3/6-exercise-two-dimensional-arrays.md
-      # - "Assignment 2": unit3/6-assignment-2.md
+      # - 7. Objects: unit3/7-objects.md
+      # - "- Exercise 7": unit3/7-exercise-objects.md
+      # - "Assignment 2": unit3/7-assignment-2.md
+
 
 # To fully hide a page from the built site (not just the nav), list it
 # here. This returns a 404 for that page's URL entirely.
@@ -136,4 +139,6 @@ exclude_docs: |
   unit3/5-exercise-arrays-and-functions.md
   unit3/6-two-dimensional-arrays.md
   unit3/6-exercise-two-dimensional-arrays.md
-  unit3/6-assignment-2.md
+  unit3/7-objects.md
+  unit3/7-exercise-objects.md
+  unit3/7-assignment-2.md

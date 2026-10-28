@@ -1,8 +1,8 @@
 # Assignment 2
 
-**Previous:** [← Exercise 6: Two-Dimensional Arrays](6-exercise-two-dimensional-arrays.md)
+**Previous:** [← Exercise 7: Objects](7-exercise-objects.md)
 
-This assignment covers Lessons 4–6. Create a new file for each
+This assignment covers Lessons 4–7. Create a new file for each
 question as noted below, inside your `unit-3` folder.
 
 !!! note "Submission"
@@ -12,7 +12,7 @@ question as noted below, inside your `unit-3` folder.
 
 ## Question 1: Concepts
 
-*Knowledge — 4 marks | Communication — 1 mark*
+*Knowledge — 5 marks | Communication — 1 mark*
 
 Create a new file named `u3-a2-1.ts`. Answer each of the following in
 a comment at the top of the file, in your own words:
@@ -112,6 +112,51 @@ entering a row and a column (1–3). Your program must:
   up with no winner
 - Use at least **three functions** (for example: displaying the board,
   checking for a winner, and getting a valid move)
+
+## Question 5: Student Records
+
+*Thinking — 2 marks | Application — 7 marks | Communication — 1 mark*
+
+Create a new file named `u3-a2-5.ts`. Create an `interface` named
+`Student` with the properties `id` (number), `name` (string) and `marks`
+(an array of numbers). Store at least four `Student` objects in an
+array, then write functions to do each of the following:
+
+- `average(student)` — returns the average of that student's marks
+  (0 if they have no marks)
+- `addMark(student, mark)` — adds a mark to the student, but only if it
+  is between 0 and 100. Return `true` if it was added and `false`
+  otherwise.
+- `findStudent(students, id)` — returns the matching student, or
+  `undefined` if there is none
+- `ranking(students)` — returns a **new** array of the students sorted
+  from highest to lowest average. The original array must **not** be
+  changed.
+
+Your program should then:
+
+1. Ask the user for a student id and a mark, and add the mark (telling
+   the user if the id was not found or the mark was invalid).
+2. Output the ranking, one student per line.
+3. Save all of the students to a file named `students.json` using
+   `JSON.stringify(students, null, 2)`.
+
+**Sample input & output:**
+```
+Student id: 2
+New mark: 91
+
+Added!
+
+1. Grace - 94.50
+2. Linus - 89.00
+3. Ada - 82.33
+4. Alan - 70.00
+```
+
+!!! note "Hint"
+    Remember that spreading an array, `[...students]`, makes a copy
+    that you can safely sort.
 
 ---
 

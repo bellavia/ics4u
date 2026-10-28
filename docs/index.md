@@ -26,6 +26,7 @@ environmental, and career dimensions of the computer science field.
 
 - [Unit 1 - Getting Started](unit1/1-intro.md)
 - [Unit 2 - Review](unit2/1-hello-world-output.md)
+- [Unit 3 - Functions & Arrays](unit3/1-functions.md)
 
 !!! note "How to use this site"
     - **Top of the page** — tabs for each unit (click one to jump in)

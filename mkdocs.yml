@@ -81,6 +81,21 @@ nav:
       - 7. Input-Output Files & Algorithms: unit2/7-files-algorithms.md
       - "- Exercise 7": unit2/7-exercise-files-algorithms.md
       - "Assignment 2": unit2/7-assignment-2.md
+  - Unit 3 - Functions & Arrays:
+      - 1. Functions: unit3/1-functions.md
+      - "- Exercise 1": unit3/1-exercise-functions.md
+      # - 2. Functions in Depth: unit3/2-functions-in-depth.md
+      # - "- Exercise 2": unit3/2-exercise-functions-in-depth.md
+      # - 3. Arrays: unit3/3-arrays.md
+      # - "- Exercise 3": unit3/3-exercise-arrays.md
+      # - "Assignment 1": unit3/3-assignment-1.md
+      # - 4. Array Methods: unit3/4-array-methods.md
+      # - "- Exercise 4": unit3/4-exercise-array-methods.md
+      # - 5. Arrays & Functions: unit3/5-arrays-and-functions.md
+      # - "- Exercise 5": unit3/5-exercise-arrays-and-functions.md
+      # - 6. Two-Dimensional Arrays: unit3/6-two-dimensional-arrays.md
+      # - "- Exercise 6": unit3/6-exercise-two-dimensional-arrays.md
+      # - "Assignment 2": unit3/6-assignment-2.md
 
 # To fully hide a page from the built site (not just the nav), list it
 # here. This returns a 404 for that page's URL entirely.
@@ -88,7 +103,7 @@ exclude_docs: |
   # unit1/2-computing-environment.md
   # unit1/2-assignment-1.md
   # unit1/3-what-is-binary.md
-  # unit1/3-assignment-2.md
+  # unit1/3-assignment-2.md 
   # unit1/4-setting-up-replit.md
   # unit1/5-organizing-projects.md
   # unit1/5-assignment-3.md
@@ -110,3 +125,15 @@ exclude_docs: |
   # unit2/7-files-algorithms.md
   # unit2/7-exercise-files-algorithms.md
   # unit2/7-assignment-2.md
+  unit3/2-functions-in-depth.md
+  unit3/2-exercise-functions-in-depth.md
+  unit3/3-arrays.md
+  unit3/3-exercise-arrays.md
+  unit3/3-assignment-1.md
+  unit3/4-array-methods.md
+  unit3/4-exercise-array-methods.md
+  unit3/5-arrays-and-functions.md
+  unit3/5-exercise-arrays-and-functions.md
+  unit3/6-two-dimensional-arrays.md
+  unit3/6-exercise-two-dimensional-arrays.md
+  unit3/6-assignment-2.md

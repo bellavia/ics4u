@@ -1,0 +1,267 @@
+//ICS4U Unit 2 Test - Import into D2L Question Library via Quiz > Add/Edit Questions > Import
+"//15 Multiple Choice, 5 True/False, 4 Written Response (K/U or Comm), 1 Written Response (Application/Thinking)"
+"//Covers: Hello World & Output, Data Types/Variables/Errors, Input/BEDMAS/Decimal Output, Strings, Selection & Try-Catch, Repetition (Loops), Files & Algorithms"
+
+"//=== MULTIPLE CHOICE (1 mark each, 15 marks) ==="
+NewQuestion,MC
+ID,ICS4U-U2-MC1
+Title,Output vs process.stdout.write
+QuestionText,"What is the output of: process.stdout.write(""A""); console.log(""B""); process.stdout.write(""C""); console.log(""D"");"
+Points,1
+Difficulty,1
+Option,100,"AB on one line, then CD on the next line",,Correct.
+Option,0,ABCD on a single line,,"console.log() moves to a new line after printing, so the output is split across two lines."
+Option,0,"A, B, C and D each on their own line",,"process.stdout.write() does not start a new line, so A and C stay on the same line as the console.log() that follows."
+Option,0,Only B and D are displayed,,process.stdout.write() does display its text; it just doesn't add a new line.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC2
+Title,String concatenation and numbers
+QuestionText,"What is the output of: console.log(""Total: "" + 4 + 6);"
+Points,1
+Difficulty,2
+Option,100,Total: 46,,Correct.
+Option,0,Total: 10,,"Once a string is involved, each + joins text, so 4 and 6 are joined as text rather than added. Brackets would force (4 + 6) to calculate first."
+Option,0,Total: 4 6,,No space is added between the values; + just joins them end to end.
+Option,0,Total: 24,,"The values are joined, not multiplied or otherwise calculated."
+
+NewQuestion,MC
+ID,ICS4U-U2-MC3
+Title,Valid variable names
+QuestionText,Which of the following is a valid variable name that also follows the camelCase convention?
+Points,1
+Difficulty,1
+Option,100,finalScore,,Correct.
+Option,0,2ndPlace,,A variable name cannot start with a digit.
+Option,0,my score,,A variable name cannot contain spaces.
+Option,0,let,,let is a keyword and cannot be used as a variable name.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC4
+Title,Runtime errors
+QuestionText,"A program compiles without errors, but crashes partway through while it is running. Which category of error is this?"
+Points,1
+Difficulty,1
+Option,100,Runtime error,,Correct.
+Option,0,Syntax error,,"A syntax error is a mistake in how the code is written, usually flagged in the editor before the program runs."
+Option,0,Compile error,,A compile error is found by npx tsc before the program ever runs; this program compiled successfully.
+Option,0,Formatting error,,This is not one of the three error categories covered in the lesson.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC5
+Title,Number() with bad input
+QuestionText,"What is the output of: let x: number = Number(""hello""); console.log(x);"
+Points,1
+Difficulty,2
+Option,100,NaN,,Correct.
+Option,0,0,,Number() does not return 0 for text that is not a number; it returns NaN.
+Option,0,hello,,Number() converts text into a number; it does not return the original text when conversion fails.
+Option,0,The program crashes with an error,,"In TypeScript, Number() never crashes on bad input; it quietly returns NaN."
+
+NewQuestion,MC
+ID,ICS4U-U2-MC6
+Title,Remainder operator
+QuestionText,What is the output of: console.log(20 % 6);
+Points,1
+Difficulty,1
+Option,100,2,,Correct.
+Option,0,3,,"3 is the whole-number result of 20 / 6 (what Math.floor(20 / 6) gives), not the remainder."
+Option,0,3.33,,"3.33 is the decimal result of division, not the remainder produced by %."
+Option,0,20,,"The % operator gives the remainder after dividing, not the original number."
+
+NewQuestion,MC
+ID,ICS4U-U2-MC7
+Title,Formatting decimals
+QuestionText,"What is the output of: let money: number = 5.43 * 2.4; console.log(""You have $"" + money.toFixed(2));"
+Points,1
+Difficulty,2
+Option,100,You have $13.03,,Correct.
+Option,0,You have $13.031999999999998,,That is the output without .toFixed(); .toFixed(2) rounds to 2 decimal places.
+Option,0,You have $13.0,,"toFixed(2) keeps two decimal places, not one."
+Option,0,You have $13.04,,"5.43 * 2.4 is 13.032, which rounds to 13.03, not 13.04."
+
+NewQuestion,MC
+ID,ICS4U-U2-MC8
+Title,indexOf not found
+QuestionText,"What does console.log(""Hello World"".indexOf(""world"")); output?"
+Points,1
+Difficulty,2
+Option,100,-1,,Correct.
+Option,0,0,,0 would mean the text was found at the very start of the string.
+Option,0,6,,"6 is the index of ""World"" with a capital W; indexOf is case sensitive, so ""world"" is not found."
+Option,0,The program crashes,,indexOf does not crash when the text is not found; it returns -1.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC9
+Title,substring indexes
+QuestionText,"What does console.log(""Hello World"".substring(2, 5)); output?"
+Points,1
+Difficulty,2
+Option,100,llo,,Correct.
+Option,0,He,,"That would be substring(0, 2)."
+Option,0,llo ,,"substring stops before the end index, so index 5 (the space) is not included."
+Option,0,lo W,,"That would start at index 3, not index 2."
+
+NewQuestion,MC
+ID,ICS4U-U2-MC10
+Title,When catch runs
+QuestionText,When does the code inside a catch { } block run?
+Points,1
+Difficulty,1
+Option,100,Only when an exception is thrown inside the try { } block,,Correct.
+Option,0,Every time the program runs,,"If nothing is thrown in the try block, the catch block is skipped entirely."
+Option,0,Before the try { } block runs,,The try block runs first; catch only runs afterward if something was thrown.
+Option,0,Only when the user presses Enter,,Pressing Enter has no direct effect on whether catch runs.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC11
+Title,Purpose of isNaN
+QuestionText,What is the purpose of isNaN(x)?
+Points,1
+Difficulty,1
+Option,100,It checks whether x is not a valid number,,Correct.
+Option,0,It converts x into a number,,"Converting text to a number is the job of Number(), not isNaN()."
+Option,0,It rounds x to the nearest whole number,,"Rounding is done with functions like Math.round(), not isNaN()."
+Option,0,It ends the program if x is negative,,isNaN checks for NaN; it doesn't test for negative numbers or end the program.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC12
+Title,Counting loop repetitions
+QuestionText,How many times does the body of this loop run? for (let i = 0; i < 10; i += 3) { console.log(i); }
+Points,1
+Difficulty,2
+Option,100,"4 times (i is 0, 3, 6, 9)",,Correct.
+Option,0,3 times,,"i is 0, 3, 6 and 9 when the condition i < 10 is true, which is four times, not three."
+Option,0,10 times,,"The loop counter increases by 3 each time, not by 1."
+Option,0,9 times,,"The loop counter increases by 3 each time, so it does not reach 9 repetitions."
+
+NewQuestion,MC
+ID,ICS4U-U2-MC13
+Title,break in a loop
+QuestionText,What is the output of: for (let x = 0; x < 100; x++) { if (x === 3) { break; } console.log(x); }
+Points,1
+Difficulty,2
+Option,100,"0, 1, 2 (each on its own line)",,Correct.
+Option,0,"0, 1, 2, 3 (each on its own line)",,"break runs when x is 3, before console.log(x) can display 3."
+Option,0,3 only,,"The loop displays 0, 1 and 2 before x reaches 3."
+Option,0,The code never stops running,,break exits the loop immediately when x is 3.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC14
+Title,writeFileSync and existing files
+QuestionText,"The file output.txt already contains several lines of text. What happens when this statement runs: fs.writeFileSync(""output.txt"", ""Hi"");"
+Points,1
+Difficulty,2
+Option,100,"The old contents are replaced with ""Hi""",,Correct.
+Option,0,"The text ""Hi"" is added to the end of the file",,writeFileSync replaces the file's contents completely; it does not append.
+Option,0,The program crashes because the file already exists,,"writeFileSync creates the file if it is missing, and overwrites it if it exists."
+Option,0,Nothing happens unless the file is closed first,,There is no separate open or close step; writeFileSync handles the whole file in one call.
+
+NewQuestion,MC
+ID,ICS4U-U2-MC15
+Title,Stepping through records
+QuestionText,"An input file has 3 records of 3 lines each (9 lines in total), and lines is an array holding every line. How many times does this loop run? for (let i = 0; i < lines.length; i += 3) { }"
+Points,1
+Difficulty,2
+Option,100,3 times,,Correct.
+Option,0,9 times,,"The loop steps through the array 3 lines at a time, so it runs once per record, not once per line."
+Option,0,1 time,,"i is 0, 3 and 6 while it is less than 9, so the loop runs three times."
+Option,0,27 times,,"The number of lines is 9, and the loop steps by 3, so it can't run 27 times."
+
+
+"//=== TRUE / FALSE (1 mark each, 5 marks) ==="
+NewQuestion,TF
+ID,ICS4U-U2-TF1
+Title,Concatenation with numbers
+QuestionText,"True or False: In TypeScript, console.log(""5 + 5 = "" + 5 + 5) outputs 5 + 5 = 10."
+Points,1
+Difficulty,2
+TRUE,0,"Incorrect - the first + joins strings, so the later + operators keep joining text instead of adding, giving 5 + 5 = 55."
+FALSE,100,"Correct - once a string is involved, each + joins text, so the output is 5 + 5 = 55. Brackets (5 + 5) would force the calculation."
+
+NewQuestion,TF
+ID,ICS4U-U2-TF2
+Title,Reading a whole file
+QuestionText,True or False: fs.readFileSync() reads the entire contents of a file at once and returns them as a string.
+Points,1
+Difficulty,1
+TRUE,100,"Correct - Node reads the entire file into memory at once, and the string can then be split into lines."
+FALSE,0,"Incorrect - readFileSync reads the whole file at once, returning it as one string."
+
+NewQuestion,TF
+ID,ICS4U-U2-TF3
+Title,Number() and exceptions
+QuestionText,"True or False: In TypeScript, Number(""hello"") throws an exception that immediately crashes the program."
+Points,1
+Difficulty,2
+TRUE,0,"Incorrect - Number() returns NaN instead of throwing an exception, so the program keeps running unless you check for it."
+FALSE,100,Correct - Number() never crashes on bad input; it quietly returns NaN.
+
+NewQuestion,TF
+ID,ICS4U-U2-TF4
+Title,Boolean flags
+QuestionText,True or False: A boolean flag is a true/false variable that is used to track whether something has happened.
+Points,1
+Difficulty,1
+TRUE,100,"Correct - for example, a validInput flag can track whether the user has entered a valid number."
+FALSE,0,Incorrect - a boolean flag is exactly that: a true/false variable that tracks whether something has happened.
+
+NewQuestion,TF
+ID,ICS4U-U2-TF5
+Title,substring parameters
+QuestionText,"True or False: The second parameter of .substring(start, end) is the number of characters to extract."
+Points,1
+Difficulty,2
+TRUE,0,"Incorrect - .substring() takes a start index and an end index, not a length."
+FALSE,100,"Correct - the second parameter is an end index, and extraction stops just before it."
+
+
+"//=== WRITTEN RESPONSE - SHORT ANSWER (K/U or Communication, marked manually) ==="
+NewQuestion,WR
+ID,ICS4U-U2-SA1
+Title,Three categories of errors [KU 3][COMM 1]
+QuestionText,"Describe the three categories of errors you can encounter while coding: syntax errors, compile errors, and runtime errors. Give a different example of each."
+Points,4
+Difficulty,1
+InitialText,
+AnswerKey,"A syntax error is a mistake in how the code is written (e.g., a missing semicolon or bracket) and is usually flagged right in the editor. A compile error is found by npx tsc before the program ever runs (e.g., using a variable that was never declared, or assigning a string to a number variable) and is often caused by a syntax error. A runtime error happens while the program is actually running (e.g., a crash partway through because an exception was thrown). KU: 1 mark for each category correctly described with a valid example. Communication: 1 mark for clear, correct terminology and complete sentences."
+
+NewQuestion,WR
+ID,ICS4U-U2-SA2
+Title,NaN and error handling [KU 3][COMM 1]
+QuestionText,"In TypeScript, Number(""hello"") does not crash the program. (a) What value does it return? (b) Why can this be a problem for a program? (c) Describe how you would detect the problem and handle it using isNaN, throw, and try-catch."
+Points,4
+Difficulty,2
+InitialText,
+AnswerKey,"(a) It returns NaN (""Not a Number""). (b) The program keeps running with a broken value; NaN silently spreads through later calculations and nothing warns the user that something went wrong. (c) Put the input inside a try block, check isNaN(x), and throw new Error(...) if true; the catch block then handles the problem (e.g., displays a message and exits, or sets a boolean flag). KU: 1 mark each for (a), (b) and (c). Communication: 1 mark for a clear, well-organized explanation."
+
+NewQuestion,WR
+ID,ICS4U-U2-SA3
+Title,Reading and writing files [KU 3][COMM 1]
+QuestionText,"Explain how a program reads data from a text file and writes results to another file in TypeScript. Include what fs.readFileSync(), .split(), and fs.writeFileSync() each do, and what happens if the output file already exists."
+Points,4
+Difficulty,2
+InitialText,
+AnswerKey,"fs.readFileSync(file, ""utf-8"") reads the entire file at once and returns its contents as one string. .split(/\r?\n/) breaks that string into an array with one element per line, which the program can then step through with a loop. fs.writeFileSync(file, text) saves a string to a file, creating it if it does not exist and completely replacing the old contents if it does (a number must be converted to a string first). There is no separate open or close step. KU: 1 mark each for readFileSync, split, and writeFileSync (including that it overwrites existing contents). Communication: 1 mark for clear, organized explanation using correct terminology."
+
+NewQuestion,WR
+ID,ICS4U-U2-SA4
+Title,String joining versus adding [KU 3][COMM 1]
+QuestionText,"Explain why console.log(""5 plus 5 equals "" + 5 + 5) outputs 5 plus 5 equals 55 instead of 5 plus 5 equals 10, and show how to change the statement so it outputs 10."
+Points,4
+Difficulty,2
+InitialText,
+AnswerKey,"Because the statement begins with a string, the first + joins that string and the number 5 into a longer string. Every + after that also joins text instead of adding, so the second 5 is just attached to the end, giving 55. Wrapping the calculation in brackets, console.log(""5 plus 5 equals "" + (5 + 5)), forces 5 + 5 to be calculated first (BEDMAS), so the output is 10. KU: 1 mark for explaining that + joins strings once a string is involved; 1 mark for recognizing the numbers are not being added; 1 mark for the correct fix using brackets. Communication: 1 mark for a clear explanation."
+
+
+"//=== APPLICATION / THINKING (higher-mark, marked manually) ==="
+NewQuestion,WR
+ID,ICS4U-U2-APP1
+Title,Scores report program [APP 4][THINK 3][COMM 1]
+QuestionText,"A file named scores.txt has one test score per line (for example, the lines 72, 45, abc, 88, 105). Write a TypeScript program that reads the file and writes a file named report.txt containing the average of the valid scores (to 2 decimal places) and the number of lines skipped. A line is invalid if it is not a number or is not between 0 and 100. Your program must not crash if there are no valid scores."
+Points,8
+Difficulty,6
+InitialText,
+AnswerKey,"Sample solution: import * as fs from ""fs""; const lines: string[] = fs.readFileSync(""scores.txt"", ""utf-8"").trim().split(/\r?\n/); let total = 0, count = 0, skipped = 0; for (let i = 0; i < lines.length; i++) { let score = Number(lines[i]); if (isNaN(score) || score < 0 || score > 100) { skipped++; } else { total += score; count++; } } let average = count === 0 ? 0 : total / count; fs.writeFileSync(""report.txt"", ""Average: "" + average.toFixed(2) + ""\nSkipped lines: "" + skipped); For the sample file the report is: Average: 68.33 / Skipped lines: 2. APPLICATION (4): reads the file into an array of lines and writes report.txt with fs.writeFileSync (2); loop with correct total and count accumulators (1); average formatted with toFixed(2) (1). THINKING (3): validates with isNaN and the 0-100 range using logical operators (2); avoids dividing by zero when there are no valid scores (1). COMMUNICATION (1): clear variable names and consistent indentation."
+
+

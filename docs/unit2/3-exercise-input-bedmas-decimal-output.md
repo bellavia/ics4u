@@ -6,7 +6,7 @@
 
 ## Question 1
 
-Create a new file named `u2-e03-1.ts`. Create variables for each
+Create a new file named `u2-e3-1.ts`. Create variables for each
 mathematical expression below and output each result to the console.
 Use BEDMAS.
 
@@ -47,13 +47,13 @@ Variable `k` equals `i` plus 3 multiplied by 5, all divided by `j` plus
 
 ## Question 2
 
-Create a new file named `u2-e03-2.ts`. Write a program that asks the
+Create a new file named `u2-e3-2.ts`. Write a program that asks the
 user for **5 numbers**. Calculate the average and output it (with 2
 decimal places) with an appropriate message.
 
 ## Question 3
 
-Create a new file named `u2-e03-3.ts`. Write a program that asks the
+Create a new file named `u2-e3-3.ts`. Write a program that asks the
 user for the number of apples, the price per apple, and the HST tax
 rate. Output the **subtotal**, **tax**, and **total** with appropriate
 messages.
@@ -108,7 +108,7 @@ messages.
 
 ## Question 4
 
-Create a new file named `u2-e03-4.ts`. Write a program that asks the
+Create a new file named `u2-e3-4.ts`. Write a program that asks the
 user for two numbers (`m` and `n`), then swaps the values so `m` equals
 the original value of `n`, and `n` equals the original value of `m`.
 
@@ -124,7 +124,7 @@ between them is:
 
 $$d = \sqrt{(x2 - x1)^2 + (y2 - y1)^2}$$
 
-Create a new file named `u2-e03-5.ts`. Write a program that asks the
+Create a new file named `u2-e3-5.ts`. Write a program that asks the
 user for the coordinates of points A and B, then calculates and
 outputs the distance `d`, using `Math.pow()` and `Math.sqrt()`.
 

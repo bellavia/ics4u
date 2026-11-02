@@ -9,7 +9,7 @@
 
 ## Question 1
 
-Create a new file named `u2-e07-1.ts`. Create the following input file
+Create a new file named `u2-e7-1.ts`. Create the following input file
 (`input.txt`):
 
 ```
@@ -57,7 +57,7 @@ an output file (`output.txt`). For example:
 
 ## Question 2 — [THINK]
 
-Create a new file named `u2-e07-2.ts`. Rewrite the program above so the
+Create a new file named `u2-e7-2.ts`. Rewrite the program above so the
 input file is comma-delimited (`input.csv`), like this:
 
 ```
@@ -74,7 +74,7 @@ input file is comma-delimited (`input.csv`), like this:
 
 ## Question 3
 
-Create a new file named `u2-e07-3.ts`. Without using any built-in
+Create a new file named `u2-e7-3.ts`. Without using any built-in
 string functions (except `.length`, `.toLowerCase()`, or
 `.toUpperCase()`), write a program that asks the user for a string and
 counts how many times the same letter appears **side by side**. For
@@ -94,7 +94,7 @@ letter pairs total.
 
 ## Question 4
 
-Create a new file named `u2-e07-4.ts`. Without using any built-in
+Create a new file named `u2-e7-4.ts`. Without using any built-in
 string functions (except `.length`, `.toLowerCase()`, or
 `.toUpperCase()`), ask the user for a string and output it with all
 vowels removed. For example:

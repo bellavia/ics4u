@@ -6,7 +6,7 @@
 
 ## Question 1
 
-Create a new file named `u2-e01-1.ts`. Output each of the following to
+Create a new file named `u2-e1-1.ts`. Output each of the following to
 the console **exactly as shown**:
 
 **a)**
@@ -24,7 +24,7 @@ five plus six is 11
 
 ## Question 2: ASCII Art
 
-Create a new file named `u2-e01-2.ts`. Using a combination of the
+Create a new file named `u2-e1-2.ts`. Using a combination of the
 block character `█` and spaces, recreate a simple image of your
 choosing — try your own initials, or a simple shape.
 

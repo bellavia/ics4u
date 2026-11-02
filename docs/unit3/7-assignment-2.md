@@ -32,7 +32,7 @@ rows and the number of columns.
 
 ## Question 2: Playlist Manager
 
-*Thinking — 2 marks | Application — 7 marks | Communication — 1 mark*
+*Application — 7 marks | Thinking — 2 marks | Communication — 1 mark*
 
 Create a new file named `u3-a2-2.ts`. Write a program that manages a
 playlist stored in an array of strings. Repeatedly show this menu until
@@ -58,7 +58,7 @@ Requirements:
 
 ## Question 3: File Statistics
 
-*Thinking — 2 marks | Application — 7 marks | Communication — 1 mark*
+*Application — 7 marks | Thinking — 2 marks | Communication — 1 mark*
 
 Create a new file named `u3-a2-3.ts`. Create a file named `numbers.txt`
 with one number per line:
@@ -99,7 +99,7 @@ Range: 6
 
 ## Question 4: Tic-Tac-Toe
 
-*Thinking — 2 marks | Application — 7 marks | Communication — 1 mark*
+*Application — 7 marks | Thinking — 2 marks | Communication — 1 mark*
 
 Create a new file named `u3-a2-4.ts`. Write a two-player tic-tac-toe
 game using a 3×3 `string[][]` board. Players `X` and `O` take turns
@@ -115,7 +115,7 @@ entering a row and a column (1–3). Your program must:
 
 ## Question 5: Student Records
 
-*Thinking — 2 marks | Application — 7 marks | Communication — 1 mark*
+*Application — 7 marks | Thinking — 2 marks | Communication — 1 mark*
 
 Create a new file named `u3-a2-5.ts`. Create an `interface` named
 `Student` with the properties `id` (number), `name` (string) and `marks`

@@ -38,7 +38,7 @@ valid indexes of an array with 10 elements?
 
 ## Question 2: Triangle Toolkit
 
-*Thinking — 2 marks | Application — 5 marks | Communication — 1 mark*
+*Application — 5 marks | Thinking — 2 marks | Communication — 1 mark*
 
 Create a new file named `u3-a1-2.ts`. Write the following functions:
 
@@ -93,7 +93,7 @@ Mark 2: 92 (A)
 
 ## Question 4: Number Analyzer
 
-*Thinking — 2 marks | Application — 5 marks | Communication — 1 mark*
+*Application — 5 marks | Thinking — 2 marks | Communication — 1 mark*
 
 Create a new file named `u3-a1-4.ts`. Ask the user how many numbers
 they want to enter (it must be a positive whole number — keep asking

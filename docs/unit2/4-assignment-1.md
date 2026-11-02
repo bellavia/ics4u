@@ -2,8 +2,6 @@
 
 **Previous:** [← Exercise 4: Strings](4-exercise-strings.md)
 
-**Due Date:** Wednesday, October 7th, 2026
-
 This assignment covers Lessons 1–5. Create a new file for each
 question as noted below, inside your `unit-2` folder.
 
@@ -16,6 +14,8 @@ question as noted below, inside your `unit-2` folder.
     Make sure your teacher has been invited to this Replit project.
 
 ## Question 1: Formulas
+
+*Knowledge — 2 marks | Application — 4 marks | Communication — 1 mark*
 
 Create a new file named `u2-a1-1.ts`. Implement the following, making
 sure to follow BEDMAS (TypeScript's single `number` type means you
@@ -34,6 +34,8 @@ $$\frac{u^4 + \frac{1}{v}}{3w - \sin{\frac{1}{w}}}$$
 
 ## Question 2: Ice Cream Shop
 
+*Application — 5 marks | Communication — 1 mark*
+
 An ice cream shop sells three flavours:
 
 - Vanilla — $0.90 per scoop
@@ -48,6 +50,8 @@ tax (13% HST), and grand total in currency format (`$` sign, 2 decimal
 places).
 
 ## Question 3: Piggy Bank
+
+*Application — 4 marks | Thinking — 1 mark | Communication — 1 mark*
 
 Create a new file named `u2-a1-3.ts`. Johnny has a piggy bank full of
 coins. Write a program that asks Johnny for the number of each of the
@@ -65,6 +69,8 @@ positive or negative).
 
 ## Question 4: Speaker Volumes
 
+*Application — 4 marks | Thinking — 2 marks | Communication — 1 mark*
+
 Create a new file named `u2-a1-4.ts`. Create the following string:
 
 ```typescript
@@ -81,6 +87,8 @@ speakers. For example, if the user enters speakers 2, 3, and 5, the
 total would be `9 + 2 + 3 = 14`.
 
 ## Question 5: Finding All Occurrences
+
+*Application — 4 marks | Thinking — 3 marks | Communication — 1 mark*
 
 Create a new file named `u2-a1-5.ts`. Create the following string:
 
@@ -107,4 +115,3 @@ above — **case-insensitive**.
 ---
 
 **Next:** [Selection: If-Statements & Try-Catch →](5-selection-if-trycatch.md)
-<!-- **Next:** Lesson 5: (available soon) -->

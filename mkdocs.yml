@@ -84,8 +84,8 @@ nav:
   - Unit 3 - Functions & Arrays:
       - 1. Functions: unit3/1-functions.md
       - "- Exercise 1": unit3/1-exercise-functions.md
-      # - 2. Functions in Depth: unit3/2-functions-in-depth.md
-      # - "- Exercise 2": unit3/2-exercise-functions-in-depth.md
+      - 2. Functions in Depth: unit3/2-functions-in-depth.md
+      - "- Exercise 2": unit3/2-exercise-functions-in-depth.md
       # - 3. Arrays: unit3/3-arrays.md
       # - "- Exercise 3": unit3/3-exercise-arrays.md
       # - "Assignment 1": unit3/3-assignment-1.md
@@ -128,8 +128,8 @@ exclude_docs: |
   # unit2/7-files-algorithms.md
   # unit2/7-exercise-files-algorithms.md
   # unit2/7-assignment-2.md
-  unit3/2-functions-in-depth.md
-  unit3/2-exercise-functions-in-depth.md
+  # unit3/2-functions-in-depth.md
+  # unit3/2-exercise-functions-in-depth.md
   unit3/3-arrays.md
   unit3/3-exercise-arrays.md
   unit3/3-assignment-1.md

@@ -72,5 +72,5 @@ Go-Go-Go
 
 ---
 
-<!-- **Next:** [Lesson 2: Functions in Depth →](2-functions-in-depth.md) -->
-**Next:** Lesson 2: (available soon)
+**Next:** [Lesson 2: Functions in Depth →](2-functions-in-depth.md)
+<!-- **Next:** Lesson 2: (available soon) -->

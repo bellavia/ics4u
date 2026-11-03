@@ -2,6 +2,8 @@
 
 **Previous:** [← Lesson 2: Functions in Depth](2-functions-in-depth.md)
 
+**Due Date:** Thursday, November 5th, 2026
+
 ## Question 1: Predict the Output
 
 Create a new file named `u3-e2-1.ts` and type in the following code:
@@ -92,4 +94,5 @@ Write a function called `gcd` that implements this, and test it with
 
 ---
 
-**Next:** [Lesson 3: Arrays →](3-arrays.md)
+<!-- **Next:** [Lesson 3: Arrays →](3-arrays.md) -->
+**Next:** Lesson 3: (available soon)

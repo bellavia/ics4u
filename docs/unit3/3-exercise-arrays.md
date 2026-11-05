@@ -2,6 +2,8 @@
 
 **Previous:** [← Lesson 3: Arrays](3-arrays.md)
 
+**Due Date:** Tuesday, November 10th, 2026
+
 !!! note "Reminder"
     Put `export {};` at the end of each file, and set up `prompt-sync`
     in any file that needs user input.
@@ -68,4 +70,5 @@ array. Then output:
 
 ---
 
-**Next:** [Assignment 1 →](3-assignment-1.md)
+<!-- **Next:** [Assignment 1 →](3-assignment-1.md) -->
+**Next:** Assignment 1: (available soon)

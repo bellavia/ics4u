@@ -70,5 +70,5 @@ array. Then output:
 
 ---
 
-<!-- **Next:** [Assignment 1 →](3-assignment-1.md) -->
-**Next:** Assignment 1: (available soon)
+**Next:** [Assignment 1 →](3-assignment-1.md)
+<!-- **Next:** Assignment 1: (available soon) -->

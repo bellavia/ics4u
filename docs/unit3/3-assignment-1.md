@@ -2,6 +2,8 @@
 
 **Previous:** [← Exercise 3: Arrays](3-exercise-arrays.md)
 
+**Due Date:** Friday, November 13th, 2026
+
 This assignment covers Lessons 1–3. Create a new file for each
 question as noted below, inside your `unit-3` folder.
 
@@ -121,4 +123,5 @@ Second largest: 9
 
 ---
 
-**Next:** [Lesson 4: Array Methods →](4-array-methods.md)
+<!-- **Next:** [Lesson 4: Array Methods →](4-array-methods.md) -->
+**Next:** Lesson 4: (available soon)

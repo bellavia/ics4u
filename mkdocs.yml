@@ -89,8 +89,8 @@ nav:
       - 3. Arrays: unit3/3-arrays.md
       - "- Exercise 3": unit3/3-exercise-arrays.md
       - "Assignment 1": unit3/3-assignment-1.md
-      # - 4. Array Methods: unit3/4-array-methods.md
-      # - "- Exercise 4": unit3/4-exercise-array-methods.md
+      - 4. Array Methods: unit3/4-array-methods.md
+      - "- Exercise 4": unit3/4-exercise-array-methods.md
       # - 5. Arrays & Functions: unit3/5-arrays-and-functions.md
       # - "- Exercise 5": unit3/5-exercise-arrays-and-functions.md
       # - 6. Two-Dimensional Arrays: unit3/6-two-dimensional-arrays.md
@@ -133,8 +133,8 @@ exclude_docs: |
   # unit3/3-arrays.md
   # unit3/3-exercise-arrays.md
   # unit3/3-assignment-1.md
-  unit3/4-array-methods.md
-  unit3/4-exercise-array-methods.md
+  # unit3/4-array-methods.md
+  # unit3/4-exercise-array-methods.md
   unit3/5-arrays-and-functions.md
   unit3/5-exercise-arrays-and-functions.md
   unit3/6-two-dimensional-arrays.md

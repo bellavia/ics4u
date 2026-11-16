@@ -123,5 +123,5 @@ Second largest: 9
 
 ---
 
-<!-- **Next:** [Lesson 4: Array Methods →](4-array-methods.md) -->
-**Next:** Lesson 4: (available soon)
+**Next:** [Lesson 4: Array Methods →](4-array-methods.md)
+<!-- **Next:** Lesson 4: (available soon) -->

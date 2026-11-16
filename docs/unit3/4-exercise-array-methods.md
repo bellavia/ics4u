@@ -2,6 +2,8 @@
 
 **Previous:** [← Lesson 4: Array Methods](4-array-methods.md)
 
+**Due Date:** Wednesday, November 18th, 2026
+
 !!! note "Reminder"
     Put `export {};` at the end of each file, and set up `prompt-sync`
     in any file that needs user input.
@@ -71,4 +73,5 @@ values, the median is the average of the two middle values.
 
 ---
 
-**Next:** [Lesson 5: Arrays & Functions →](5-arrays-and-functions.md)
+<!-- **Next:** [Lesson 5: Arrays & Functions →](5-arrays-and-functions.md) -->
+**Next:** Lesson 5: (available soon)

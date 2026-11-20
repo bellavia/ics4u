@@ -10,44 +10,33 @@
 
 Create a new file named `u3-e7-1.ts`. Create an `interface` named
 `Product` with the properties `id` (number), `name` (string), `price`
-(number) and `inStock` (boolean). Then:
-
-1. Create a `Product` object for a product of your choice.
-2. Output its name and price.
-3. Change its price (a 10% discount) and set `inStock` to `false`.
-4. Output the whole object with `JSON.stringify(product, null, 2)`.
+(number) and `inStock` (boolean). Create a `Product` object, output its
+name and price, then give it a 10% discount, set `inStock` to `false`,
+and output the whole object with `JSON.stringify(product, null, 2)`.
 
 ## Question 2
 
 Create a new file named `u3-e7-2.ts`. Create an array of **at least
-five** `Product` objects (reuse your interface from Question 1). Write
-code that:
-
-1. Outputs every product as `name - $price`, one per line.
-2. Outputs the **names of the products that are in stock** (use
-   `.filter()` and `.map()`).
-3. Finds the product with an id the user types in (use `.find()`) and
-   outputs its name, or "Not found" if there is no match.
-4. Outputs the total value of all products that are in stock.
+five** `Product` objects (reuse your interface). Output the **names of
+the products that are in stock** (use `.filter()` and `.map()`), then
+find the product whose id the user types in (use `.find()`) and output
+its name, or "Not found".
 
 ## Question 3
 
-Create a new file named `u3-e7-3.ts`. Create a `User` object that has a
-nested `address` object (street, city) and a `hobbies` array.
-
-1. Make a **copy** of the user with the spread operator, then change
-   the copy's name and its `address.city`.
-2. Output both users with `JSON.stringify`.
-3. **Think:** did the original user's `address.city` change as well?
-   Explain why in a comment at the top of your file.
+Create a new file named `u3-e7-3.ts`. Create a `User` object with a
+nested `address` object (street, city) and a `hobbies` array. Make a
+**copy** with the spread operator, change the copy's name and
+`address.city`, and output both users with `JSON.stringify`. In a
+comment at the top, explain whether the original's `address.city`
+changed, and why.
 
 ## Question 4 — [THINK]
 
-Create a new file named `u3-e7-4.ts`. Write a program that stores an
-array of at least three user objects in a **JSON file** called
-`users.json` using `fs.writeFileSync()`. Then read the file back with
-`fs.readFileSync()`, convert it with `JSON.parse()`, add one more user,
-and write the updated list back to the file.
+Create a new file named `u3-e7-4.ts`. Save an array of at least three
+user objects to `users.json` with `fs.writeFileSync()`. Read it back
+with `fs.readFileSync()` and `JSON.parse()`, add one more user, and
+write the updated list back to the file.
 
 ---
 

@@ -81,7 +81,7 @@ nav:
       - 7. Input-Output Files & Algorithms: unit2/7-files-algorithms.md
       - "- Exercise 7": unit2/7-exercise-files-algorithms.md
       - "Assignment 2": unit2/7-assignment-2.md
-  - Unit 3 - Functions & Arrays:
+  - Unit 3 - Functions, Arrays & Objects:
       - 1. Functions: unit3/1-functions.md
       - "- Exercise 1": unit3/1-exercise-functions.md
       - 2. Functions in Depth: unit3/2-functions-in-depth.md
@@ -91,8 +91,8 @@ nav:
       - "Assignment 1": unit3/3-assignment-1.md
       - 4. Array Methods: unit3/4-array-methods.md
       - "- Exercise 4": unit3/4-exercise-array-methods.md
-      # - 5. Arrays & Functions: unit3/5-arrays-and-functions.md
-      # - "- Exercise 5": unit3/5-exercise-arrays-and-functions.md
+      - 5. Arrays & Functions: unit3/5-arrays-and-functions.md
+      - "- Exercise 5": unit3/5-exercise-arrays-and-functions.md
       # - 6. Two-Dimensional Arrays: unit3/6-two-dimensional-arrays.md
       # - "- Exercise 6": unit3/6-exercise-two-dimensional-arrays.md
       # - 7. Objects: unit3/7-objects.md
@@ -135,8 +135,8 @@ exclude_docs: |
   # unit3/3-assignment-1.md
   # unit3/4-array-methods.md
   # unit3/4-exercise-array-methods.md
-  unit3/5-arrays-and-functions.md
-  unit3/5-exercise-arrays-and-functions.md
+  # unit3/5-arrays-and-functions.md
+  # unit3/5-exercise-arrays-and-functions.md
   unit3/6-two-dimensional-arrays.md
   unit3/6-exercise-two-dimensional-arrays.md
   unit3/7-objects.md

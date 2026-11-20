@@ -73,5 +73,5 @@ values, the median is the average of the two middle values.
 
 ---
 
-<!-- **Next:** [Lesson 5: Arrays & Functions →](5-arrays-and-functions.md) -->
-**Next:** Lesson 5: (available soon)
+**Next:** [Lesson 5: Arrays & Functions →](5-arrays-and-functions.md)
+<!-- **Next:** Lesson 5: (available soon) -->

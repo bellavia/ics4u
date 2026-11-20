@@ -2,7 +2,7 @@
 
 **Previous:** [← Lesson 5: Arrays & Functions](5-arrays-and-functions.md)
 
-**Due Date:** Tuesday, November 23rd, 2026
+**Due Date:** Tuesday, November 24th, 2026
 
 !!! note "Reminder"
     Put `export {};` at the end of each file. Your functions should

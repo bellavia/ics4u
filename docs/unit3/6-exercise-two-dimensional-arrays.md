@@ -2,6 +2,8 @@
 
 **Previous:** [← Lesson 6: Two-Dimensional Arrays](6-two-dimensional-arrays.md)
 
+**Due Date:** Friday, November 27th, 2026
+
 !!! note "Reminder"
     Put `export {};` at the end of each file that doesn't already start
     with an `import`.
@@ -57,4 +59,5 @@ and the name of the student with the **highest average**.
 
 ---
 
-**Next:** [Lesson 7: Objects →](7-objects.md)
+<!-- **Next:** [Lesson 7: Objects →](7-objects.md) -->
+**Next:** Lesson 7: (available soon)

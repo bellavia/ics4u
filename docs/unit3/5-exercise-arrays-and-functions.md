@@ -46,5 +46,5 @@ and after. In a comment, explain which version is safer and why.
 
 ---
 
-<!-- **Next:** [Lesson 6: Two-Dimensional Arrays →](6-two-dimensional-arrays.md) -->
-**Next:** Lesson 6: (available soon)
+**Next:** [Lesson 6: Two-Dimensional Arrays →](6-two-dimensional-arrays.md)
+<!-- **Next:** Lesson 6: (available soon) -->
